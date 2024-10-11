@@ -28,3 +28,4 @@ D:\PS\PhoneShop\obj\Debug\net8.0\refint\PhoneShop.dll
 D:\PS\PhoneShop\obj\Debug\net8.0\PhoneShop.pdb
 D:\PS\PhoneShop\obj\Debug\net8.0\PhoneShop.genruntimeconfig.cache
 D:\PS\PhoneShop\obj\Debug\net8.0\ref\PhoneShop.dll
+D:\PS\PhoneShop\obj\Debug\net8.0\PhoneShop.sourcelink.json
