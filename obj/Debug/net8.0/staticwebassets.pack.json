@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone13\\iphone-13-02.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone13\\iphone-13-02.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone13\\iphone-13-128-2gb.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone13\\iphone-13-128-2gb.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone13\\iphone-13-128-3gb.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone13\\iphone-13-128-3gb.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone13\\iphone-13-128gb.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone13\\iphone-13-128gb.jpg"
+    },
+    {
       "Id": "D:\\PS\\PhoneShop\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

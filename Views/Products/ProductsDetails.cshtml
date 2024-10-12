@@ -1,0 +1,26 @@
+@using PhoneShop.Models.Entities
+@model ProductDetailsViewModel
+
+<div class="container">
+    <h2>Products</h2>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-5">
+                <img src="~/images/@Model.Medias?.Where(m => m.IsMain ?? false).FirstOrDefault()?.MediaURL" alt="Sản phẩm 1"
+                    style="width: 100%;" loading="lazy">
+                <div class="row mt-3">
+                    @foreach (var media in Model.Medias!)
+                    {
+                        <img style="height: 80px; width: auto;" src="~/images/@media.MediaURL" alt="Image" loading="lazy"/>
+                    }
+                </div>
+            </div>
+
+            <div class="col-7">
+                <h5 class="card-title">@Model.Name</h5>
+                <p class="card-text">@Model.Description</p>
+                <p class="text-danger"><strong>@Model.Price</strong></p>
+            </div>
+        </div>
+    </div>
+</div>

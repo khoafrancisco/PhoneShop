@@ -18,6 +18,7 @@ public class AppDbContext : DbContext
     public DbSet<Reviews> Reviews { get; set; }
     public DbSet<Shipping> Shippings { get; set; }
     public DbSet<Users> Users { get; set; }
+    public DbSet<Media> Medias { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

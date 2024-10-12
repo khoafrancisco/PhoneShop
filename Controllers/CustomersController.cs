@@ -85,10 +85,10 @@ public class CustomersController : Controller
         var customers = _context.Customers.ToList();
 
         // In dữ liệu ra console
-        foreach (var customer in customers)
-        {
-            Console.WriteLine($"CustomerID: {customer.CustomerID}, FullName: {customer.FullName}, Email: {customer.Email}, Phone: {customer.Phone}, Address: {customer.Address}, CreatedDate: {customer.CreatedDate}");
-        }
+        // foreach (var customer in customers)
+        // {
+        //     Console.WriteLine($"CustomerID: {customer.CustomerID}, FullName: {customer.FullName}, Email: {customer.Email}, Phone: {customer.Phone}, Address: {customer.Address}, CreatedDate: {customer.CreatedDate}");
+        // }
 
         // Trả về view hoặc dữ liệu
         return View(customers);

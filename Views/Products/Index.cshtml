@@ -1,0 +1,29 @@
+@using PhoneShop.Models.Entities;
+@model List<ProductDetailsViewModel>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<div class="container">
+    <h2>Products</h2>
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 g-4">
+            @foreach (var p in Model)
+            {
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="~/images/@p.Medias?.Where(m => m.IsMain ?? false).FirstOrDefault()?.MediaURL" class="card-img-top" loading="lazy"
+                            alt="Sản phẩm 1">
+                        <div class="card-body">
+                            <h5 class="card-title">@p.Name</h5>
+                            <p class="card-text">@p.Description</p>
+                            <p class="text-danger"><strong>@p.Price</strong></p>
+                             <a asp-controller="Products" asp-action="ProductsDetails" asp-route-ProductID="@p.ProductID" class="btn btn-primary">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
