@@ -10,6 +10,6 @@ public class OrderStatus
     public int StatusID { get; set; }
     public int OrderID { get; set; }
     [ForeignKey("OrderID")]
-    public int Status { get; set; }
-    public int UpdatedDate { get; set; }
+    public string? Status { get; set; }
+    public DateTime UpdatedDate { get; set; }
 }

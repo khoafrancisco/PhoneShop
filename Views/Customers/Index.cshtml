@@ -1,0 +1,29 @@
+@using PhoneShop.Models.Entities;
+@model List<Customers>
+
+@{
+    ViewData["Title"] = "Customers";
+}
+
+<div class="container">
+    <h2>Customers</h2>
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 g-4">
+            @foreach (var customer in Model)
+            {
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://minhtuanmobile.com/uploads/products/230225033127-12red.png" class="card-img-top"
+                            alt="Sản phẩm 1">
+                        <div class="card-body">
+                            <h5 class="card-title">@customer.FullName</h5>
+                            <p class="card-text">@customer.Address</p>
+                            <p class="text-danger"><strong>34,990,000 VND</strong></p>
+                            <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

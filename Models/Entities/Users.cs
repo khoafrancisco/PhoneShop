@@ -8,8 +8,8 @@ public class Users
 {
     [Key]
     public int UserID { get; set; }
-    public int UserName { get; set; }
-    public int PasswordHash { get; set; }
-    public int Role { get; set; }
-    public int CreatedDate { get; set; }
+    public string? UserName { get; set; }
+    public string? PasswordHash { get; set; }
+    public string? Role { get; set; }
+    public DateTime CreatedDate { get; set; }
 }

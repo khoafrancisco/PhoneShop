@@ -1,0 +1,65 @@
+@* @model PhoneShop.Models.Product
+
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<div class="product-detail">
+    <h1>@Model.Name</h1>
+    <div class="product-images">
+        <div class="main-image">
+            <img id="mainImage" src="@Model.MainImageUrl" alt="@Model.Name" />
+        </div>
+        <div class="thumbnail-images">
+            @foreach (var imageUrl in Model.ImageUrls)
+            {
+                <img class="thumbnail" src="@imageUrl" alt="@Model.Name" onclick="changeImage('@imageUrl')" />
+            }
+        </div>
+    </div>
+    <div class="product-info">
+        <p>@Model.Description</p>
+        <p>Price: @Model.Price.ToString("C")</p>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function changeImage(imageUrl) {
+            document.getElementById('mainImage').src = imageUrl;
+        }
+    </script>
+}
+
+<style>
+    .product-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-image img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .thumbnail-images {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .thumbnail {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    .product-info {
+        margin-top: 20px;
+        text-align: center;
+    }
+</style> *@

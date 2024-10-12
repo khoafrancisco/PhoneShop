@@ -13,14 +13,6 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\facebook-logo.png",
-      "PackagePath": "staticwebassets\\images\\facebook-logo.png"
-    },
-    {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\tiktok-logo.png",
-      "PackagePath": "staticwebassets\\images\\tiktok-logo.png"
-    },
-    {
       "Id": "D:\\PS\\PhoneShop\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -10,9 +10,9 @@ public class Orders
     public int OrderID { get; set; }
     public int CustomerID { get; set; }
     [ForeignKey("CustomerID")]
-    public int OrderDate { get; set; }
-    public int TotalAmount { get; set; }
-    public int PaymentStatus { get; set; }
-    public int ShippingAddress { get; set; }
-    public int Discount { get; set; }
+    public DateTime OrderDate { get; set; }
+    public decimal TotalAmount { get; set; }
+    public string? PaymentStatus { get; set; }
+    public string? ShippingAddress { get; set; }
+    public decimal Discount { get; set; }
 }

@@ -13,7 +13,7 @@ public class Reviews
     public int CustomerID { get; set; }
     [ForeignKey("CustomerID")]
     public int Rating { get; set; }
-    public int Comment { get; set; }
-    public int CreatedDate { get; set; }
+    public string? Comment { get; set; }
+    public DateTime CreatedDate { get; set; }
     
 }

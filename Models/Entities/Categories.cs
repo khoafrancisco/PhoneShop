@@ -8,6 +8,6 @@ public class Category
 {
     [Key]
     public int CategoryID { get; set; }
-    public int CategoryName { get; set; }
+    public required string CategoryName { get; set; }
     
 }

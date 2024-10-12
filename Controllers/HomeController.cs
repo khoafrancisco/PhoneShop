@@ -7,14 +7,17 @@ namespace PhoneShop.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly AppDbContext context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, AppDbContext context)
         {
             _logger = logger;
+            this.context = context;
         }
 
         public IActionResult Index()
         {
+
             return View();
         }
 
@@ -37,15 +40,11 @@ namespace PhoneShop.Controllers
         {
             return View();
         }
-
-        [HttpPost]
-        public async Task<IActionResult> Login(LoginModel model)
-        {
-            if (ModelState.IsValid) {
-                User? user = _appDbContext.Users.FirstOrDefault(u => u.Email == model.Email && u.Password == model.Password);
-                if (user != null) {
-                    user.Role
-            }
+        public IActionResult Customers(){
+            Console.WriteLine("====Hello");
+            var customers = context.Customers.ToList();
+            return View(customers); 
         }
+        
     }
 }
