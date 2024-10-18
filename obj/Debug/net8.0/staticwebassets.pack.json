@@ -13,6 +13,54 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone11\\anh1.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone11\\anh1.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone11\\anh2.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone11\\anh2.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone11\\anh3.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone11\\anh3.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone11\\anh4.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone11\\anh4.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone11\\anh5.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone11\\anh5.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone12\\1.png",
+      "PackagePath": "staticwebassets\\images\\Iphone12\\1.png"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone12\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone12\\2.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone12\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone12\\3.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone12\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone12\\4.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone12\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone12\\5.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone12\\6.png",
+      "PackagePath": "staticwebassets\\images\\Iphone12\\6.png"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone12\\7.png",
+      "PackagePath": "staticwebassets\\images\\Iphone12\\7.png"
+    },
+    {
       "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone13\\iphone-13-02.jpg",
       "PackagePath": "staticwebassets\\images\\Iphone13\\iphone-13-02.jpg"
     },
@@ -25,8 +73,112 @@
       "PackagePath": "staticwebassets\\images\\Iphone13\\iphone-13-128-3gb.jpg"
     },
     {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone13\\iphone-13-128gb-4.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone13\\iphone-13-128gb-4.jpg"
+    },
+    {
       "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone13\\iphone-13-128gb.jpg",
       "PackagePath": "staticwebassets\\images\\Iphone13\\iphone-13-128gb.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone14\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone14\\1.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone14\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone14\\2.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone14\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone14\\3.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone14\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone14\\4.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone14\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone14\\5.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone15\\1.png",
+      "PackagePath": "staticwebassets\\images\\Iphone15\\1.png"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone15\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone15\\2.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone15\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone15\\3.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone15\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone15\\4.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone15\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone15\\5.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone16promax\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone16promax\\1.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone16promax\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone16promax\\2.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone16promax\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone16promax\\3.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone16promax\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone16promax\\4.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphone16promax\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphone16promax\\5.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphonex\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphonex\\1.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphonex\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphonex\\2.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphonex\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphonex\\3.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphonex\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphonex\\4.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\Iphonex\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\Iphonex\\5.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\ipad\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\ipad\\1.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\ipad\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\ipad\\2.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\ipad\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\ipad\\3.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\ipad\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\ipad\\4.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\ipad\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\ipad\\5.jpg"
     },
     {
       "Id": "D:\\PS\\PhoneShop\\wwwroot\\js\\site.js",
