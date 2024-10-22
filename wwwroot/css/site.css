@@ -20,3 +20,68 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  width: 23%;
+  margin-bottom: 20px;
+}
+
+.footer-column h3, .footer-column h4 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #555;
+}
+
+.footer-column ul li a:hover {
+  color: #f00;
+}
+
+.payment-methods img, .social-links img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  color: #777;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer-column {
+      width: 100%;
+      text-align: center;
+  }
+}

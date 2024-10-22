@@ -10,5 +10,6 @@ public class ProductDetailsViewModel
     public int CategoryID { get; set; }
     public DateTime CreatedDate { get; set; }
     public List<Media>? Medias { get; set; }
+    public List<ProductDetailsViewModel>? RelatedProducts { get; set; }
 
 }

@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using PhoneShop.Models;
+using PhoneShop.Models.Entities;
 using System.Diagnostics;
 
 namespace PhoneShop.Controllers
@@ -17,10 +19,16 @@ namespace PhoneShop.Controllers
 
         public IActionResult Index()
         {
+            List<Products> sanpham =   context.Products.Take(4).ToList();
+            ViewData["sanpham"] = sanpham;
 
+            List<Media> medias =   context.Medias.Take(4).ToList();
+            ViewData["hinhanh"] = medias;
+            ViewData["sanpham"] = sanpham;
             return View();
         }
-
+        
+        
         public IActionResult Privacy()
         {
             return View();

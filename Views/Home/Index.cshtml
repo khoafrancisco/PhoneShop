@@ -1,75 +1,13 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using PhoneShop.Models.Entities
+DDaay la trang chu
+
+@{
+    ViewBag.Title = "Home Page";
+}
+@foreach(var product in ViewData["sanpham"] as List<Products>){
+    <h1>@product.Name</h1>
 }
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sản phẩm</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <div class="container mt-5">
-         <a class="btn btn-danger mb-3" asp-controller="Users" asp-action="Index">Danh sách nhân viên</a>
-         <a class="btn btn-success mb-3" asp-controller="Products" asp-action="Index">Danh sach san pham</a>
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-            <!-- Sản phẩm 1 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://minhtuanmobile.com/uploads/products/230225033127-12red.png" class="card-img-top" alt="Sản phẩm 1">
-                    <div class="card-body">
-                        <h5 class="card-title">iPhone 13 Pro Max</h5>
-                        <p class="card-text">iPhone 13 Pro Max với màn hình OLED 6.7 inch, chip A15 Bionic, camera 12MP và pin dung lượng lớn.</p>
-                        <p class="text-danger"><strong>34,990,000 VND</strong></p>
-                        <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sản phẩm 2 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://minhtuanmobile.com/uploads/products/230805084854-iphone14-plus-128gb-purple-minhtuanmobile.png" class="card-img-top" alt="Sản phẩm 2">
-                    <div class="card-body">
-                        <h5 class="card-title">iPhone 14 Pro</h5>
-                        <p class="card-text">iPhone 14 Pro với công nghệ Dynamic Island, màn hình 6.1 inch, chip A16 Bionic và hệ thống camera cải tiến.</p>
-                        <p class="text-danger"><strong>36,990,000 VND</strong></p>
-                        <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sản phẩm 3 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://minhtuanmobile.com/uploads/products/240910032303-iphone-16-pro-max-natural-titanium-pdp-image-position-1a-natural-titanium-color-vn-vi.jpg" class="card-img-top" alt="Sản phẩm 3">
-                    <div class="card-body">
-                        <h5 class="card-title">iPhone 16 Pro Max</h5>
-                        <p class="card-text">iPhone 16 Pro Max với màn hình 6.7 inch, chip A16 Bionic, camera 48MP và pin siêu bền.</p>
-                        <p class="text-danger"><strong>41,990,000 VND</strong></p>
-                        <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sản phẩm 4 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://minhtuanmobile.com/uploads/products/240910110847-iphone-16-plus-ultramarine-pdp-image-position-1a-ultramarine-color-vn-vi.jpg" class="card-img-top" alt="Sản phẩm 4">
-                    <div class="card-body">
-                        <h5 class="card-title">iPhone 16 Pro Max</h5>
-                        <p class="card-text">iPhone 16 Pro Max với màn hình 6.7 inch, chip A16 Bionic, camera 48MP và pin siêu bền.</p>
-                        <p class="text-danger"><strong>41,990,000 VND</strong></p>
-                        <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+@foreach(var image in ViewData["hinhanh"] as List<Media>){
+    <img src="~/images/@image.MediaURL"></img>
+}

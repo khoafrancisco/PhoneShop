@@ -161,6 +161,22 @@
       "PackagePath": "staticwebassets\\images\\Iphonex\\5.jpg"
     },
     {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\checkout\\mastercard.png",
+      "PackagePath": "staticwebassets\\images\\checkout\\mastercard.png"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\checkout\\momo.png",
+      "PackagePath": "staticwebassets\\images\\checkout\\momo.png"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\checkout\\visa.png",
+      "PackagePath": "staticwebassets\\images\\checkout\\visa.png"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\checkout\\vnpay.png",
+      "PackagePath": "staticwebassets\\images\\checkout\\vnpay.png"
+    },
+    {
       "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\ipad\\1.jpg",
       "PackagePath": "staticwebassets\\images\\ipad\\1.jpg"
     },
@@ -179,6 +195,18 @@
     {
       "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\ipad\\5.jpg",
       "PackagePath": "staticwebassets\\images\\ipad\\5.jpg"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\social\\facebook.png",
+      "PackagePath": "staticwebassets\\images\\social\\facebook.png"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\social\\tiktok.png",
+      "PackagePath": "staticwebassets\\images\\social\\tiktok.png"
+    },
+    {
+      "Id": "D:\\PS\\PhoneShop\\wwwroot\\images\\social\\zalo.png",
+      "PackagePath": "staticwebassets\\images\\social\\zalo.png"
     },
     {
       "Id": "D:\\PS\\PhoneShop\\wwwroot\\js\\site.js",
