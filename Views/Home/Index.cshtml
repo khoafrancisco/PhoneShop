@@ -1,13 +1,78 @@
 ﻿@using PhoneShop.Models.Entities
-DDaay la trang chu
 
 @{
     ViewBag.Title = "Home Page";
 }
-@foreach(var product in ViewData["sanpham"] as List<Products>){
-    <h1>@product.Name</h1>
+
+<!-- Carousel Banner -->
+<div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/images/social/iphone-banner1.png" class="d-block w-100" alt="Banner 1">
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/social/iphone-banner2.png" class="d-block w-100" alt="Banner 2">
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/social/iphone-banner3.png" class="d-block w-100" alt="Banner 3">
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/social/iphone-banner4.png" class="d-block w-100" alt="Banner 4">
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/social/iphone-banner5.png" class="d-block w-100" alt="Banner 5">
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/social/shop.png" class="d-block w-100" alt="Banner 6">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#homeCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#homeCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
+
+<h2 class="mt-5 text-center">Sản phẩm bán chạy</h2>
+
+@if (ViewData["sanpham"] is List<Products> products) {
+    <div class="container">
+        <div class="row">
+            @foreach (var product in products) {
+                <div class="col-md-2 mb-4"> <!-- Mỗi thẻ chiếm 2 cột trên 12 cột -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Name</h5>
+                            <p class="card-text">Price: @product.Price</p>
+                            <p class="card-text">@product.Description</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
 }
 
-@foreach(var image in ViewData["hinhanh"] as List<Media>){
-    <img src="~/images/@image.MediaURL"></img>
-}
+@* @foreach (var image in ViewData["hinhanh"] as List<Media>) {
+    <img src="~/images/@image.MediaURL" class="img-fluid" alt="Image">
+} *@
+
+@* <div class="mt-5">
+    <h2 class="text-center">Khách hàng của chúng tôi</h2>
+</div>
+@if (ViewData["hinhanh"] is List<Media> images) {
+    <div class="container">
+        <div class="row">
+            @foreach (var image in images) {
+                <div class="col-md-2 mb-4"> <!-- Mỗi thẻ chiếm 2 cột trên 12 cột -->
+                    <div class="card">
+                        <img src="~/images/@image.MediaURL" class="card-img-top img-fluid" alt="Image">
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+} *@

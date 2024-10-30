@@ -7,12 +7,25 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PhoneShop.styles.css" asp-append-version="true" />
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure the header is above other content */
+        }
+        body {
+            padding-top: 70px; /* Adjust this value based on the height of your header */
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Minh Apple</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/social/apple.png" alt="Logo" style="height: 40px; width: auto;" />
+                Minh Apple</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,6 +48,7 @@
                     <ul class="navbar-nav">
                         <li class="nav-item"></li>
                             <a class="nav-link text-dark" asp-area="" asp-controller="Cart" asp-action="Index">
+                                <img src="~/images/social/cart.png" alt="Cart" style="height: 20px; width: auto; margin: 5px;">
                                 <i class="fas fa-shopping-cart"></i> Giỏ hàng
                             </a>
                         </li>

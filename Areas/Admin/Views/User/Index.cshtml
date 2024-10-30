@@ -1,0 +1,129 @@
+@{
+    ViewData["Title"] = "Quản lý người dùng";
+    Layout = "_Layout";
+}
+<h3 class="display-4 text-primary text-shadow font-weight-bold">@ViewData["Title"]</h3>
+
+<div class="container mt-5">
+
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th>Tên đăng nhập</th>
+                <th>Mật khẩu</th>
+                <th>Quyền</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var users in Model)
+            {
+                <tr>
+                    <td>@users.UserName</td>
+                    <td>
+                        <i id="toggle-password-@users.UserID" class="fas fa-eye"
+                            onclick="togglePassword('@users.UserID')"></i>
+                        <input type="password" id="password-@users.UserID" value="@users.PasswordHash">
+                    </td>
+                    <td>@(users.Role)</td>
+                    <td>
+                        <button class="btn btn-primary" onclick="onEdit(@users.UserID)">Chỉnh sửa</button>
+                        <button class="btn btn-danger" onclick="onDelete(@users.UserID)">Xóa</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button class="btn btn-primary" onclick="onCreate()">Thêm người dùng</button>
+
+</div>
+
+<div id="modal-area-content"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script>
+    onEdit = (id) => {
+        $.ajax({
+            type: 'GET',
+            data: {
+                id: id,
+            },
+            url: '@Url.Action("Edit", "User", new { area = "Admin" })',
+            success: (res) => {
+                $('#modal-area-content').empty();
+                $('#modal-area-content').html(res);
+                $('#addUserModal').modal('show');
+            },
+        });
+    }
+
+    onCreate = () => {
+        console.log('@Url.Action("Detail", "User", new { area = "Admin" })');
+
+        $.ajax({
+            type: 'GET',
+            url: '@Url.Action("Detail", "User", new { area = "Admin" })',
+            success: (res) => {
+                console.log(res); 
+                $('#modal-area-content').empty();
+                $('#modal-area-content').html(res);
+                $('#addUserModal').modal('show');
+            },
+             error: (xhr, status, error) => {
+            console.error("Error occurred: ", status, error);
+            alert("Lỗi: " + xhr.responseText);
+        }
+        });
+    }
+
+    onDelete = (id) => {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    url: `@Url.Action("Delete", "User", new { area = "Admin" })/${id}`,
+                    method: 'DELETE',
+                    success: (data) => {
+                        if (data.success) {
+                            Swal.fire(
+                                'Deleted!',
+                                data.message,
+                                'success'
+                            ).then(() => {
+                                location.reload();
+                            });
+                        } else {
+                            Swal.fire(
+                                'Error!',
+                                'Something went wrong.',
+                                'error'
+                            );
+                        }
+                    }
+                });
+            }
+        });
+    }
+
+    function togglePassword(userId) {
+        var passwordInput = document.getElementById('password-' + userId);
+        var toggleIcon = document.getElementById('toggle-password-' + userId);
+
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            toggleIcon.classList.add('fa-eye-slash');
+            toggleIcon.classList.remove('fa-eye');
+        } else {
+            passwordInput.type = "password";
+            toggleIcon.classList.add('fa-eye');
+            toggleIcon.classList.remove('fa-eye-slash');
+        }
+    }
+</script>

@@ -19,12 +19,11 @@ namespace PhoneShop.Controllers
 
         public IActionResult Index()
         {
-            List<Products> sanpham =   context.Products.Take(4).ToList();
+            List<Products> sanpham = context.Products.Take(5).ToList();
             ViewData["sanpham"] = sanpham;
-
-            List<Media> medias =   context.Medias.Take(4).ToList();
+            
+            List<Media> medias = context.Medias.Take(5).ToList();
             ViewData["hinhanh"] = medias;
-            ViewData["sanpham"] = sanpham;
             return View();
         }
         

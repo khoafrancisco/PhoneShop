@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\PS\\PhoneShop\\PhoneShop.csproj": {}
+    "D:\\PS\\PhoneShop\\PhoneShop.csproj": {}
   },
   "projects": {
-    "d:\\PS\\PhoneShop\\PhoneShop.csproj": {
+    "D:\\PS\\PhoneShop\\PhoneShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\PS\\PhoneShop\\PhoneShop.csproj",
+        "projectUniqueName": "D:\\PS\\PhoneShop\\PhoneShop.csproj",
         "projectName": "PhoneShop",
-        "projectPath": "d:\\PS\\PhoneShop\\PhoneShop.csproj",
+        "projectPath": "D:\\PS\\PhoneShop\\PhoneShop.csproj",
         "packagesPath": "C:\\Users\\joskh\\.nuget\\packages\\",
-        "outputPath": "d:\\PS\\PhoneShop\\obj\\",
+        "outputPath": "D:\\PS\\PhoneShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joskh\\AppData\\Roaming\\NuGet\\NuGet.Config",
