@@ -1,0 +1,74 @@
+@model Tuple<PhoneShop.Models.Entities.Products, IEnumerable<PhoneShop.Models.Entities.Media>>
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+    Layout = "_Layout";
+}
+
+<h1>@(Model.Item1.ProductID > 0 ? "Chỉnh sửa Sản phẩm" : "Thêm sản phẩm mới")</h1>
+
+<form asp-action="Save" method="post">
+    <input type="hidden" asp-for="Item1.ProductID" />
+    
+    <div>
+        <label for="ProductName">Tên:</label>
+        <input asp-for="Item1.Name" class="form-control" id="ProductName" />
+    </div>
+    
+    <div>
+        <label for="Price">Giá:</label>
+        <input asp-for="Item1.Price" class="form-control" id="Price" type="number" step="0.01" />
+    </div>
+    
+    <div>
+        <label for="Stock">Kho:</label>
+        <input asp-for="Item1.Stock" class="form-control" id="Stock" type="number" />
+    </div>
+    
+    <div>
+        <label for="Description">Mô tả:</label>
+        <textarea asp-for="Item1.Description" class="form-control" id="Description"></textarea>
+    </div>
+
+    <h3>Ảnh sản phẩm</h3>
+    @if (Model.Item2 != null && Model.Item2.Any())
+    {
+        <ul>
+            @foreach (var media in Model.Item2)
+            {
+                <li>
+                    <img src="@media.MediaURL" alt="Product Image" width="100" />
+                    
+                    <label>
+                        <input type="checkbox" name="mediaList[@media.MediaID].IsMain" 
+                               @(media.IsMain ?? false ? "checked" : "") />
+                        Ảnh chính
+                    </label>
+                    <button type="button" onclick="deleteMedia(@media.MediaID)">Xóa</button>
+                    
+                    <input type="hidden" name="mediaList[@media.MediaID].MediaID" value="@media.MediaID" />
+                    <input type="hidden" name="mediaList[@media.MediaID].MediaURL" value="@media.MediaURL" />
+                </li>
+            }
+        </ul>
+    }
+    <button type="submit" class="btn btn-primary">Lưu sản phẩm</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function deleteMedia(id) {
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("DeleteMedia", "Product", new { area = "Admin" })',
+            data: { id: id },
+            success: function (res) {
+                console.log(res);
+                location.reload();
+            },
+            error: function (xhr, status, error) {
+                console.error("Error occurred:", status, error);
+                alert("Lỗi: " + xhr.responseText);
+            }
+        });
+    }
+</script>

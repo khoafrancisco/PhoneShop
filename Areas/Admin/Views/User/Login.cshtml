@@ -1,6 +1,6 @@
 @using PhoneShop.Admin.Models
 @{
-    ViewData["Title"] = "Login";
+    ViewData["Title"] = "Login - Minh Apple Store";
     Layout = "_Layout";
 }
 @model LoginModel
@@ -11,8 +11,8 @@
         <img src="~/images/logo.png" alt="Logo" width="150" height="150" style="border-radius: 90px;">
         <div class="ml-custom">
             <br>
-            <h2 style="color: #007BFF; text-shadow: 2px 2px 4px #571313;"><b>Quản lý phòng máy</b></h2>
-            <h1 style="color: #3d28a7; text-shadow: 2px 2px 4px #000000;"><b>Khoa Công nghệ thông tin</b></h1>
+            <h2 style="color: #007BFF; text-shadow: 2px 2px 4px #571313;"><b>Minh Apple Store</b></h2>
+            <h1 style="color: #3d28a7; text-shadow: 2px 2px 4px #000000;"><b>Sign in to your account</b></h1>
         </div>
     </div>
     <br>
@@ -23,20 +23,21 @@
     
     <form class="col-sm-6" method="post">
         <div class="mb-3">
-            <label asp-for="UserName" class="form-label"></label>
+            <label asp-for="UserName" class="form-label">Username or Email</label>
             <input type="text" class="form-control" asp-for="UserName" aria-describedby="emailHelp" placeholder="Type Username or Email">
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
   
-    <div class="mb-3">
-      <label asp-for="Password" class="form-label"></label>
-      <input type="password" class="form-control" asp-for="Password" placeholder="Type Password">
-    </div>
+        <div class="mb-3">
+            <label asp-for="Password" class="form-label">Password</label>
+            <input type="password" class="form-control" asp-for="Password" placeholder="Type Password">
+        </div>
   
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" asp-for="RememberMe">
-      <label class="form-check-label" asp-for="RememberMe"></label>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" asp-for="RememberMe">
+            <label class="form-check-label" asp-for="RememberMe">Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
 </div>

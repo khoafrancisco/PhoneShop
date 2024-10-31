@@ -19,14 +19,21 @@ namespace PhoneShop.Controllers
 
         public IActionResult Index()
         {
+            // Fetch the top 5 products
             List<Products> sanpham = context.Products.Take(5).ToList();
-            ViewData["sanpham"] = sanpham;
             
-            List<Media> medias = context.Medias.Take(5).ToList();
-            ViewData["hinhanh"] = medias;
+            // Select each product along with its main image
+            var productMedia = sanpham.Select(product => new 
+            {
+                Product = product,
+                Media = context.Medias.FirstOrDefault(media => media.ProductID == product.ProductID && media.IsMain == true)
+            }).ToList();
+
+            // Pass the combined product-media data to the view
+            ViewData["productMedia"] = productMedia;
             return View();
         }
-        
+
         
         public IActionResult Privacy()
         {

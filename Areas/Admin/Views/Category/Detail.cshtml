@@ -1,0 +1,49 @@
+@model PhoneShop.Models.Entities.Category
+@{
+    ViewData["Title"] = Model.CategoryID > 0 ? "Chỉnh sửa danh mục" : "Thêm danh mục mới";
+    Layout = "_Layout";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form id="categoryForm" method="post" asp-action="Save">
+    <input type="hidden" asp-for="CategoryID" />
+    
+    <div class="form-group">
+        <label asp-for="CategoryName">Tên danh mục</label>
+        <input asp-for="CategoryName" class="form-control" />
+        <span asp-validation-for="CategoryName" class="text-danger"></span>
+    </div>
+    
+    <!-- Thêm div chứa các nút và lớp khoảng cách -->
+    <div class="mt-4">
+        <button type="submit" class="btn btn-success">Lưu danh mục</button>
+        <a href="@Url.Action("Index", "Category")" class="btn btn-secondary">Quay lại danh sách</a>
+    </div>
+</form>
+
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#categoryForm').submit(function (event) {
+            event.preventDefault();
+            $.ajax({
+                url: $(this).attr('action'),
+                type: 'POST',
+                data: $(this).serialize(),
+                success: function (response) {
+                    if (response.success) {
+                        alert(response.message);
+                        window.location.href = '@Url.Action("Index", "Category")';
+                    } else {
+                        alert(response.message);
+                    }
+                },
+                error: function () {
+                    alert("Có lỗi xảy ra khi lưu danh mục");
+                }
+            });
+        });
+    </script>
+}

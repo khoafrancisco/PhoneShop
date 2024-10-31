@@ -1,4 +1,5 @@
 ﻿@using PhoneShop.Models.Entities
+@model List<Products>
 
 @{
     ViewBag.Title = "Home Page";
@@ -47,7 +48,7 @@
                         <div class="card-body">
                             <h5 class="card-title">@product.Name</h5>
                             <p class="card-text">Price: @product.Price</p>
-                            <p class="card-text">@product.Description</p>
+                            
                         </div>
                     </div>
                 </div>
@@ -56,23 +57,4 @@
     </div>
 }
 
-@* @foreach (var image in ViewData["hinhanh"] as List<Media>) {
-    <img src="~/images/@image.MediaURL" class="img-fluid" alt="Image">
-} *@
 
-@* <div class="mt-5">
-    <h2 class="text-center">Khách hàng của chúng tôi</h2>
-</div>
-@if (ViewData["hinhanh"] is List<Media> images) {
-    <div class="container">
-        <div class="row">
-            @foreach (var image in images) {
-                <div class="col-md-2 mb-4"> <!-- Mỗi thẻ chiếm 2 cột trên 12 cột -->
-                    <div class="card">
-                        <img src="~/images/@image.MediaURL" class="card-img-top img-fluid" alt="Image">
-                    </div>
-                </div>
-            }
-        </div>
-    </div>
-} *@

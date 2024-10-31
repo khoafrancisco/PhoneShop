@@ -1,0 +1,56 @@
+@model IEnumerable<PhoneShop.Models.Entities.Products>
+
+@{
+    ViewData["Title"] = "Danh sách sản phẩm";
+    Layout = "_Layout";
+}
+<h1>Danh sách sản phẩm</h1>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.ProductID</td>
+                <td>@product.Name</td>
+                <td>@product.Price.ToString("N2")</td>
+                <td>
+                    <a asp-action="Detail" asp-route-id="@product.ProductID" class="btn btn-primary">Chỉnh sửa</a>
+                    <button class="btn btn-danger" onclick="deleteProduct(@product.ProductID)">Xóa</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<button onclick="window.location.href='@Url.Action("Detail", "Product", new { area = "Admin" })'" class="btn btn-primary">Thêm sản phẩm</button>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function deleteProduct(id) {
+        $.ajax({
+            type: 'DELETE',
+            url: '@Url.Action("Delete", "Product", new { area = "Admin" })/' + id,
+            success: function (res) {
+                if (res.success) {
+                    alert(res.message);
+                    location.reload();
+                } else {
+                    alert("Có lỗi xảy ra khi xóa sản phẩm.");
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error("Error occurred:", status, error);
+                alert("Lỗi: " + xhr.responseText);
+            }
+        });
+    }
+</script>
