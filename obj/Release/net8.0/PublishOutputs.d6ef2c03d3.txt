@@ -7,6 +7,7 @@ D:\PS\PhoneShop\bin\Release\net8.0\publish\PhoneShop.runtimeconfig.json
 D:\PS\PhoneShop\bin\Release\net8.0\publish\PhoneShop.pdb
 D:\PS\PhoneShop\bin\Release\net8.0\publish\Azure.Core.dll
 D:\PS\PhoneShop\bin\Release\net8.0\publish\Azure.Identity.dll
+D:\PS\PhoneShop\bin\Release\net8.0\publish\BCrypt.Net-Next.dll
 D:\PS\PhoneShop\bin\Release\net8.0\publish\Microsoft.Bcl.AsyncInterfaces.dll
 D:\PS\PhoneShop\bin\Release\net8.0\publish\Microsoft.Data.SqlClient.dll
 D:\PS\PhoneShop\bin\Release\net8.0\publish\Microsoft.EntityFrameworkCore.dll

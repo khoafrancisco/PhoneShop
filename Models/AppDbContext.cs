@@ -5,6 +5,10 @@ namespace PhoneShop.Models;
 
 public class AppDbContext : DbContext
 {
+    public AppDbContext()
+    {
+    }
+
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
     {
     }
@@ -22,11 +26,6 @@ public class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        // modelBuilder.Entity<User>().ToTable("NguoiDung"); 
-
-        //  modelBuilder.Entity<Computers>()
-        // .HasOne<Status>(s => s.Status) // Computers has one Status
-        // .WithMany() // Status is not configured to have a navigation property back to Computers in this example
-        // .HasForeignKey(s => s.TinhTrangID);
+        
     }
 }

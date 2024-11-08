@@ -1,12 +1,16 @@
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PhoneShop.Models;
 using PhoneShop.Models.Entities;
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using System;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.IO;
 
 namespace PhoneShop.Admin.Controllers
 {
@@ -16,66 +20,137 @@ namespace PhoneShop.Admin.Controllers
     {
         private readonly AppDbContext _appDbContext;
         private readonly ILogger<ProductController> _logger;
+        private readonly IWebHostEnvironment _hostingEnvironment;
 
-        public ProductController(AppDbContext context, ILogger<ProductController> logger)
+        public ProductController(AppDbContext context, ILogger<ProductController> logger, IWebHostEnvironment hostingEnvironment)
         {
             _appDbContext = context;
             _logger = logger;
+            _hostingEnvironment = hostingEnvironment;
         }
 
+        // GET: Admin/Product
         public async Task<IActionResult> Index()
         {
-            // Fetch the list of products asynchronously
-            var products = await _appDbContext.Products.ToListAsync();
+            var products = await _appDbContext.Products.Include(p => p.Category).ToListAsync();
             return View(products);
         }
 
+        // GET: Admin/Product/Detail/5
         [HttpGet]
         public async Task<IActionResult> Detail(int? id)
         {
-            // Retrieve the product and associated media, or initialize a new product
-            var product = id.HasValue ? await _appDbContext.Products.FindAsync(id) : new Products();
-            var mediaList = await _appDbContext.Medias.Where(m => m.ProductID == id).ToListAsync();
-            ViewBag.MediaList = mediaList ?? new List<Media>();
+            ViewData["Categories"] = _appDbContext.Categories
+                .Select(c => new SelectListItem(c.CategoryName, c.CategoryID.ToString()))
+                .ToList();
+            ViewData["Medias"] = await _appDbContext.Medias.Where(m => m.ProductID == id).ToListAsync();
 
-            return PartialView("~/Areas/Admin/Views/Product/Detail.cshtml", product);
+            var product = id.HasValue ? await _appDbContext.Products.FindAsync(id) : new Products { Name = "Default Product", CreatedDate = DateTime.Now };
+
+            if (product == null && id.HasValue)
+            {
+                return NotFound("Không tìm thấy sản phẩm");
+            }
+
+            return View(product);
         }
 
+        // POST: Admin/Product/Save
         [HttpPost]
-        public async Task<IActionResult> Save(Products product, List<Media> mediaList)
+        public async Task<IActionResult> Save(Products product, IFormFile? MainImage, IFormFileCollection? AdditionalImages)
         {
+            if (!ModelState.IsValid)
+            {
+                return Json(new { success = false, message = "Dữ liệu không hợp lệ" });
+            }
+
             try
             {
+                Products? oldProduct = null;
                 if (product.ProductID > 0)
                 {
-                    // Update existing product
-                    _appDbContext.Products.Update(product);
-                }
-                else
-                {
-                    // Add new product
-                    await _appDbContext.Products.AddAsync(product);
-                }
-                await _appDbContext.SaveChangesAsync();
-
-                // Save media for product
-                foreach (var media in mediaList)
-                {
-                    media.ProductID = product.ProductID;
-
-                    if (media.IsMain ?? false)
+                    oldProduct = await _appDbContext.Products.FindAsync(product.ProductID);
+                    if (oldProduct == null)
                     {
-                        // Ensure only one main image per product
-                        var existingMain = await _appDbContext.Medias
-                            .FirstOrDefaultAsync(m => m.ProductID == product.ProductID && (m.IsMain ?? false));
-                        if (existingMain != null)
+                        return Json(new { success = false, message = "Không tìm thấy sản phẩm" });
+                    }
+                }
+
+                // Xử lý ảnh chính
+                if (MainImage != null && MainImage.Length > 0)
+                {
+                    if (oldProduct != null && !string.IsNullOrEmpty(oldProduct.Image))
+                    {
+                        var oldImagePath = Path.Combine(_hostingEnvironment.WebRootPath, "img/products", oldProduct.Image);
+                        if (System.IO.File.Exists(oldImagePath))
                         {
-                            existingMain.IsMain = false;
-                            _appDbContext.Medias.Update(existingMain);
+                            System.IO.File.Delete(oldImagePath);
                         }
                     }
 
-                    await _appDbContext.Medias.AddAsync(media);
+                    var mainImagePath = Path.Combine(_hostingEnvironment.WebRootPath, "img/products", MainImage.FileName);
+                    Directory.CreateDirectory(Path.GetDirectoryName(mainImagePath)!);
+                    using (var stream = new FileStream(mainImagePath, FileMode.Create))
+                    {
+                        await MainImage.CopyToAsync(stream);
+                    }
+                    product.Image = MainImage.FileName;
+                }
+
+                // Xử lý ảnh phụ
+                if (AdditionalImages != null && AdditionalImages.Any())
+                {
+                    if (oldProduct != null)
+                    {
+                        foreach (var media in _appDbContext.Medias.Where(m => m.ProductID == oldProduct.ProductID))
+                        {
+                            var oldMediaPath = Path.Combine(_hostingEnvironment.WebRootPath, "img/products", media.MediaURL!);
+                            if (System.IO.File.Exists(oldMediaPath))
+                            {
+                                System.IO.File.Delete(oldMediaPath);
+                            }
+                            _appDbContext.Medias.Remove(media);
+                        }
+                    }
+
+                    foreach (var image in AdditionalImages)
+                    {
+                        if (image != null && image.Length > 0)
+                        {
+                            var imagePath = Path.Combine(_hostingEnvironment.WebRootPath, "img/products", image.FileName);
+                            Directory.CreateDirectory(Path.GetDirectoryName(imagePath)!);
+                            using (var stream = new FileStream(imagePath, FileMode.Create))
+                            {
+                                await image.CopyToAsync(stream);
+                            }
+
+                            var media = new Media
+                            {
+                                ProductID = product.ProductID,
+                                MediaURL = image.FileName
+                            };
+                            await _appDbContext.Medias.AddAsync(media);
+                        }
+                    }
+                }
+
+                if (oldProduct != null)
+                {
+                    oldProduct.Name = product.Name;
+                    oldProduct.Description = product.Description;
+                    oldProduct.Price = product.Price;
+                    oldProduct.Stock = product.Stock;
+                    oldProduct.CategoryID = product.CategoryID;
+                    if (!string.IsNullOrEmpty(product.Image))
+                    {
+                        oldProduct.Image = product.Image;
+                    }
+                    _appDbContext.Products.Update(oldProduct);
+                }
+                else
+                {
+                    product.CreatedDate = DateTime.Now;
+                    await _appDbContext.Products.AddAsync(product);
                 }
 
                 await _appDbContext.SaveChangesAsync();
@@ -83,44 +158,30 @@ namespace PhoneShop.Admin.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error saving product");
-                return Json(new { success = false, message = "Có lỗi xảy ra" });
+                return Json(new { success = false, message = $"Lỗi: {ex.Message}" });
             }
         }
 
+        // DELETE: Admin/Product/Delete/5
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
             var product = await _appDbContext.Products.FindAsync(id);
             if (product == null)
             {
-                return NotFound("Không tìm thấy sản phẩm");
+                return Json(new { success = false, message = "Không tìm thấy sản phẩm" });
             }
 
-            // Remove related media before deleting the product
-            var mediaList = await _appDbContext.Medias.Where(m => m.ProductID == id).ToListAsync();
-            _appDbContext.Medias.RemoveRange(mediaList);
-
-            _appDbContext.Products.Remove(product);
-            await _appDbContext.SaveChangesAsync();
-
-            return Json(new { success = true, message = "Xóa sản phẩm thành công" });
-        }
-
-        [HttpDelete]
-        public async Task<IActionResult> DeleteMedia(int id)
-        {
-            // Remove a single media item
-            var media = await _appDbContext.Medias.FindAsync(id);
-            if (media == null)
+            try
             {
-                return NotFound("Không tìm thấy ảnh");
+                _appDbContext.Products.Remove(product);
+                await _appDbContext.SaveChangesAsync();
+                return Json(new { success = true, message = "Xóa sản phẩm thành công" });
             }
-
-            _appDbContext.Medias.Remove(media);
-            await _appDbContext.SaveChangesAsync();
-
-            return Json(new { success = true, message = "Xóa ảnh thành công" });
+            catch
+            {
+                return Json(new { success = false, message = "Có lỗi xảy ra khi xóa sản phẩm" });
+            }
         }
     }
 }

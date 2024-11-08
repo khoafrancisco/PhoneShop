@@ -9,7 +9,8 @@ public class ProductDetailsViewModel
     public int Stock { get; set; }
     public int CategoryID { get; set; }
     public DateTime CreatedDate { get; set; }
-    public List<Media>? Medias { get; set; }
-    public List<ProductDetailsViewModel>? RelatedProducts { get; set; }
+    public string? MainImage { get; set; }
+    public List<Media>? Medias { get; set; } = new List<Media>();
+    public List<ProductDetailsViewModel>? RelatedProducts { get; set; } = new List<ProductDetailsViewModel>();
 
 }

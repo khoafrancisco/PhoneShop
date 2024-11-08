@@ -28,12 +28,12 @@
                     <a asp-controller="Products" asp-action="ProductsDetails" asp-route-ProductID="@p.ProductID"
                         class="text-decoration-none text-dark">
                         <div class="card h-100">
-                            <img src="~/images/@p.Medias?.Where(m => m.IsMain ?? false).FirstOrDefault()?.MediaURL"
+                            <img src="~/img/products/@p.MainImage"
                                 class="card-img-top" loading="lazy" alt="Sản phẩm 1">
                             <div class="card-body">
                                 <h5 class="card-title">@p.Name</h5>
                                 <p class="card-text">@p.Description</p>
-                                <p class="text-danger"><strong>@p.Price</strong></p>
+                                <p class="text-danger"><strong>@p.Price.ToString("C0", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"))</strong></p>
                                 <a asp-controller="Products" asp-action="ProductsDetails" asp-route-ProductID="@p.ProductID"
                                     class="btn btn-primary">Chi tiết</a>
                             </div>
@@ -52,7 +52,7 @@
         @if (Model.CurrentPage > 1)
         {
             <li class="page-item">
-                <a class="page-link" asp-action="Index" asp-route-pageNumber="@(Model.CurrentPage - 1)" asp-route-searchString="@Model.SearchString">Truoc</a>
+                <a class="page-link" asp-action="Index" asp-route-pageNumber="@(Model.CurrentPage - 1)" asp-route-searchString="@Model.SearchString">Trước </a>
             </li>
         }
 

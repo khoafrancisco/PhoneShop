@@ -1,0 +1,96 @@
+@model Cart
+
+<div class="container mt-5">
+    <h2>Giỏ hàng</h2>
+
+    @if (!Model.Items.Any())
+    {
+        <p>Giỏ hàng của bạn đang trống.</p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Tổng</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody id="cartItems">
+                @foreach (var item in Model.Items)
+                {
+                    <tr data-product-id="@item.products.ProductID">
+                        <td> <img src="~/img/products/@item.products.Image" class="card-img" style="width: 40px; height: 60px;"
+                                loading="lazy" alt="@item.products.Name"></td>
+                        <td>@item.products.Name</td>
+                        <td>@item.products.Price.ToString("#,##0") ₫</td>
+                        <td>
+                            <div class="input-group" style="width: 120px;">
+                                <button type="button" class="btn btn-outline-secondary"
+                                    onclick="updateQuantity(this, -1)">-</button>
+                                <input type="text" value="@item.Quantity" min="1"
+                                    class="form-control text-center quantity-input" readonly />
+                                <button type="button" class="btn btn-outline-secondary"
+                                    onclick="updateQuantity(this, 1)">+</button>
+                            </div>
+                        </td>
+                        <td class="total-price">@((item.products.Price * item.Quantity).ToString("#,##0")) ₫</td>
+                        <td>
+                            <form asp-action="RemoveFromCart" method="post">
+                                <input type="hidden" name="productId" value="@item.products.ProductID" />
+                                <button type="submit" class="btn btn-sm btn-danger">Xóa</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <h4 class="text-end">Tổng cộng: <span id="totalPrice">@Model.TotalPrice.ToString("#,##0") ₫</span></h4>
+    }
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    function updateQuantity(button, change) {
+        // Lấy hàng hiện tại
+        var row = $(button).closest('tr');
+        var productId = row.data('product-id');
+        var quantityInput = row.find('.quantity-input');
+        var currentQuantity = parseInt(quantityInput.val());
+
+        // Tính số lượng mới
+        var newQuantity = currentQuantity + change;
+        if (newQuantity < 1) return; // Đảm bảo số lượng không dưới 1
+
+        // Cập nhật giá trị trong ô input
+        quantityInput.val(newQuantity);
+
+        // Gửi yêu cầu AJAX để cập nhật giỏ hàng
+        $.ajax({
+            url: '@Url.Action("UpdateQuantity", "Cart")', // URL đến hành động UpdateQuantity trong CartController
+            type: 'POST',
+            data: {
+                productId: productId,
+                quantity: newQuantity
+            },
+            success: function (response) {
+                const itemTotal = parseFloat(response.itemTotal) || 0;
+                const cartTotal = parseFloat(response.cartTotal) || 0;
+
+                const formatter = new Intl.NumberFormat('vi-VN', {
+                    style: 'currency',
+                    currency: 'VND',
+                    minimumFractionDigits: 0
+                });
+
+                row.find('.total-price').text(formatter.format(itemTotal));
+                $('#totalPrice').text(formatter.format(cartTotal));
+            }
+        });
+    }
+</script>

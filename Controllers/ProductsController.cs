@@ -3,6 +3,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PhoneShop.Models;
+using PhoneShop.Models.Entities;
 
 public class ProductsController : Controller
 {
@@ -18,7 +19,7 @@ public class ProductsController : Controller
         {
             searchString = "";
         }
-        var products = _context.Products.Where(x=>x.Name!.Contains(searchString)).ToList();
+        var products = _context.Products.Where(x => x.Name!.Contains(searchString)).ToList();
         int totalProducts = products.Count();
         var productsOnPage = products.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
 
@@ -34,6 +35,7 @@ public class ProductsController : Controller
             productDetail.Stock = product.Stock;
             productDetail.CategoryID = product.CategoryID;
             productDetail.CreatedDate = product.CreatedDate;
+            productDetail.MainImage = product.Image;
             productDetail.Medias = _context.Medias.Where(m => m.ProductID == product.ProductID).ToList();
 
             model.Add(productDetail);
@@ -50,37 +52,51 @@ public class ProductsController : Controller
     }
     public IActionResult ProductsDetails(int ProductID)
     {
-        var product = _context.Products.Find(ProductID);
-        if (product != null)
+        var product = _context.Products
+            .FirstOrDefault(p => p.ProductID == ProductID);
+
+        if (product == null)
         {
-            var model = new ProductDetailsViewModel();
-            model.ProductID = product.ProductID;
-            model.Name = product.Name;
-            model.Description = product.Description;
-            model.Price = product.Price;
-            model.Stock = product.Stock;
-            model.CategoryID = product.CategoryID;
-            model.CreatedDate = product.CreatedDate;
-            model.Medias = _context.Medias.Where(m => m.ProductID == ProductID).ToList();
-
-            var relatedProducts = _context.Products.Where(p => p.CategoryID == product.CategoryID && p.ProductID != ProductID).ToList();
-            model.RelatedProducts = new List<ProductDetailsViewModel>();
-            foreach (var relatedProduct in relatedProducts)
-            {
-                var relatedProductDetail = new ProductDetailsViewModel();
-                relatedProductDetail.ProductID = relatedProduct.ProductID;
-                relatedProductDetail.Name = relatedProduct.Name;
-                relatedProductDetail.Description = relatedProduct.Description;
-                relatedProductDetail.Price = relatedProduct.Price;
-                relatedProductDetail.Stock = relatedProduct.Stock;
-                relatedProductDetail.CategoryID = relatedProduct.CategoryID;
-                relatedProductDetail.CreatedDate = relatedProduct.CreatedDate;
-                relatedProductDetail.Medias = _context.Medias.Where(m => m.ProductID == relatedProduct.ProductID).ToList();
-
-                model.RelatedProducts.Add(relatedProductDetail);
-            }
-            return View(model);
+            return NotFound();
         }
-        return NotFound();
+
+        var model = new ProductDetailsViewModel
+        {
+            ProductID = product.ProductID,
+            Name = product.Name,
+            Description = product.Description,
+            Price = product.Price,
+            Stock = product.Stock,
+            CategoryID = product.CategoryID,
+            CreatedDate = product.CreatedDate,
+            MainImage = product.Image,
+            Medias = _context.Medias.Where(m => m.ProductID == product.ProductID).ToList(),
+            RelatedProducts = new List<ProductDetailsViewModel>() // Khởi tạo danh sách trống
+        };
+
+        // Lấy sản phẩm liên quan
+        var relatedProducts = _context.Products
+            .Where(p => p.CategoryID == product.CategoryID && p.ProductID != ProductID)
+            .ToList();
+
+        foreach (var relatedProduct in relatedProducts)
+        {
+            model.RelatedProducts.Add(new ProductDetailsViewModel
+            {
+                ProductID = relatedProduct.ProductID,
+                Name = relatedProduct.Name,
+                Description = relatedProduct.Description,
+                Price = relatedProduct.Price,
+                Stock = relatedProduct.Stock,
+                CategoryID = relatedProduct.CategoryID,
+                CreatedDate = relatedProduct.CreatedDate,
+                MainImage = relatedProduct.Image,
+                Medias = _context.Medias.Where(m => m.ProductID == relatedProduct.ProductID).ToList(),
+            });
+        }
+
+        return View(model);
     }
+
+
 }

@@ -19,8 +19,21 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.AccessDeniedPath = "/Admin/User/AccessDenied";
     });
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+
+
+
+    builder.Services.AddDistributedMemoryCache(); // Để sử dụng session trong bộ nhớ tạm
+    builder.Services.AddSession(options =>
+    {
+        options.IdleTimeout = TimeSpan.FromMinutes(30); // Thời gian timeout của session
+        options.Cookie.HttpOnly = true;
+        options.Cookie.IsEssential = true;
+    });
+    
+    builder.Services.AddControllersWithViews();
+
+
+
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
@@ -41,10 +54,15 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "areas",
-    pattern: "{area:exists}/{controller=User}/{action=Index}/{id?}"); 
+    pattern: "{area:exists}/{controller=User}/{action=Index}/{id?}");
+
+
+    
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+    app.UseSession(); // Thêm dòng này để bật session
 
 
 app.Run();

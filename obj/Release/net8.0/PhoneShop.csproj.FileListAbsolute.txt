@@ -76,3 +76,4 @@ D:\PS\PhoneShop\obj\Release\net8.0\PhoneShop.pdb
 D:\PS\PhoneShop\obj\Release\net8.0\PhoneShop.genruntimeconfig.cache
 D:\PS\PhoneShop\obj\Release\net8.0\ref\PhoneShop.dll
 D:\PS\PhoneShop\obj\Release\net8.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\PS\PhoneShop\bin\Release\net8.0\BCrypt.Net-Next.dll

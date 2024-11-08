@@ -5,48 +5,35 @@
     <div class="row">
         <!-- Column for product images -->
         <div class="col-md-5">
-            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="productCarousel" class="carousel slide">
                 <div class="carousel-inner">
-                    @foreach (var media in Model.Medias!)
-                    {
-                        <div class="carousel-item @(media.IsMain ?? false ? "active" : "")">
-                            <img src="~/images/@media.MediaURL" class="d-block w-100 rounded" alt="Product Image"
-                                loading="lazy">
-                        </div>
-                    }
+                    <div class="carousel-item active">
+                        <img id="mainImage" src="~/img/products/@Model.MainImage" class="d-block w-100 rounded" alt="Product Image" loading="lazy">
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
 
             <!-- Thumbnail images below carousel -->
             <div id="thumbnailCarousel" class="mt-3 position-relative">
-                <button class="btn btn-outline-secondary position-absolute start-0 top-50 translate-middle-y"
-                    id="prevThumb" type="button">
+                <button class="btn btn-outline-secondary position-absolute start-0 top-50 translate-middle-y" id="prevThumb" type="button">
                     <i class="bi bi-chevron-left"></i>
                 </button>
 
                 <div class="d-flex overflow-hidden" id="thumbnailsContainer">
-                    @foreach (var media in Model.Medias!)
+                    @if (Model.Medias != null && Model.Medias.Any())
                     {
-                        <div class="p-1 flex-shrink-0">
-                            <img style="height: 80px; width: auto; cursor: pointer;" src="~/images/@media.MediaURL"
-                                class="img-thumbnail" alt="Thumbnail" loading="lazy"
-                                onmouseover="showPreview('@media.MediaURL')" />
-                        </div>
+                        @foreach (var media in Model.Medias)
+                        {
+                            <div class="p-1 flex-shrink-0">
+                                <img style="height: 80px; width: auto; cursor: pointer;" src="~/img/products/@media.MediaURL"
+                                     class="img-thumbnail" alt="Thumbnail" loading="lazy"
+                                     onmouseover="updateMainImage('@media.MediaURL')" />
+                            </div>
+                        }
                     }
                 </div>
 
-                <button class="btn btn-outline-secondary position-absolute end-0 top-50 translate-middle-y"
-                    id="nextThumb" type="button">
+                <button class="btn btn-outline-secondary position-absolute end-0 top-50 translate-middle-y" id="nextThumb" type="button">
                     <i class="bi bi-chevron-right"></i>
                 </button>
             </div>
@@ -56,15 +43,18 @@
         <div class="col-md-4">
             <h2 class="fw-bold">@Model.Name</h2>
             <p class="lead text-muted">@Model.Description</p>
-            <p class="text-danger fs-4"><strong>@Model.Price.ToString("C")</strong></p>
+            <p class="text-danger fs-4"><strong>@Model.Price.ToString("C0", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"))</strong></p>
             <div class="d-grid gap-2 mt-4">
                 <button class="btn btn-primary btn-lg" onclick="buyNow()">Mua ngay</button>
-                <button class="btn btn-outline-secondary btn-lg" onclick="addToCart()">Thêm vào giỏ hàng</button>
+                <form asp-action="AddToCart" asp-controller="Cart" method="post">
+                    <input type="hidden" name="productId" value="@Model.ProductID" />
+                    <button type="submit" class="btn btn-secondary btn-lg">Thêm vào giỏ hàng</button>
+                </form>
             </div>
         </div>
 
         <!-- Column for related products -->
-        @if (Model.RelatedProducts != null)
+        @if (Model.RelatedProducts != null && Model.RelatedProducts.Any())
         {
             <div class="col-md-3">
                 <h5 class="fw-bold mt-3">Sản phẩm khác</h5>
@@ -72,11 +62,9 @@
                     @foreach (var product in Model.RelatedProducts)
                     {
                         <div class="col-md-12">
-                            <a asp-controller="Products" asp-action="ProductsDetails" asp-route-ProductID="@product.ProductID"
-                                class="text-decoration-none text-dark">
+                            <a asp-controller="Products" asp-action="ProductsDetails" asp-route-ProductID="@product.ProductID" class="text-decoration-none text-dark">
                                 <div class="card h-100">
-                                    <img src="~/images/@product.Medias!.Where(x => x.IsMain?? false).FirstOrDefault()!.MediaURL"
-                                        class="card-img-top" alt="Related Product" loading="lazy">
+                                    <img src="~/img/products/@product.MainImage" class="card-img-top" alt="Related Product" loading="lazy">
                                     <div class="card-body">
                                         <h6 class="card-title">@product.Name</h6>
                                     </div>
@@ -91,28 +79,21 @@
 </div>
 
 <script>
-    function showPreview(imageUrl) {
-        document.querySelector('#productCarousel .carousel-item.active img').src = '/images/' + imageUrl;
+    function updateMainImage(imageUrl) {
+        // Update the src of the main image with the hovered thumbnail's URL
+        document.getElementById('mainImage').src = '/img/products/' + imageUrl;
     }
 
     const container = document.getElementById('thumbnailsContainer');
     const prevButton = document.getElementById('prevThumb');
     const nextButton = document.getElementById('nextThumb');
-    
-    const scrollAmount = 100; // Tùy chỉnh khoảng cách cuộn mỗi lần
-    
+    const scrollAmount = 100;
+
     prevButton.addEventListener('click', () => {
-        container.scrollBy({
-            left: -scrollAmount,
-            behavior: 'smooth'
-        });
+        container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     });
-    
+
     nextButton.addEventListener('click', () => {
-        container.scrollBy({
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
+        container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     });
 </script>
-
