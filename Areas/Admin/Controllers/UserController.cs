@@ -49,7 +49,7 @@ private readonly ILogger<UserController> _logger;
                     //AllowRefresh = <bool>,
                     // Refreshing the authentication session should be allowed.
 
-                    ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(5),
+                    ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(60),
                     // The time at which the authentication ticket expires. A 
                     // value set here overrides the ExpireTimeSpan option of 
                     // CookieAuthenticationOptions set with AddCookie.

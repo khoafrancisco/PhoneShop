@@ -66,12 +66,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxpbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PS/PhoneShop/Views/Customer/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcTG9naW4uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/PS/PhoneShop/Views/Customer/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcUmVnaXN0ZXIuY3NodG1s
+[D:/PS/PhoneShop/Views/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/PS/PhoneShop/Views/Home/Index.cshtml]
@@ -80,10 +76,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/PS/PhoneShop/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/PS/PhoneShop/Views/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/PS/PhoneShop/Views/Order/MyOrders.cshtml]

@@ -1,0 +1,72 @@
+@model PhoneShop.Models.Entities.Customers
+@{
+    ViewData["Title"] = Model.CustomerID > 0 ? "Chỉnh sửa khách hàng" : "Thêm khách hàng mới";
+    Layout = "_Layout";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form id="customerForm" method="post" asp-action="Save">
+    <input type="hidden" asp-for="CustomerID" />
+
+    <div class="form-group">
+        <label asp-for="FullName">Họ và Tên</label>
+        <input asp-for="FullName" class="form-control" />
+        <span asp-validation-for="FullName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Phone">Số điện thoại</label>
+        <input asp-for="Phone" class="form-control" />
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Password">Mật khẩu</label>
+        <input asp-for="Password" type="password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Address">Địa chỉ</label>
+        <input asp-for="Address" class="form-control" />
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+
+    <!-- Div chứa các nút với lớp khoảng cách -->
+    <div class="mt-4">
+        <button type="submit" class="btn btn-success">Lưu khách hàng</button>
+        <a href="@Url.Action("Index", "Customer")" class="btn btn-secondary">Quay lại danh sách</a>
+    </div>
+</form>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#customerForm').submit(function (event) {
+            event.preventDefault();
+            $.ajax({
+                url: $(this).attr('action'),
+                type: 'POST',
+                data: $(this).serialize(),
+                success: function (response) {
+                    if (response.success) {
+                        alert(response.message);
+                        window.location.href = '@Url.Action("Index", "Customer")';
+                    } else {
+                        alert(response.message);
+                    }
+                },
+                error: function () {
+                    alert("Có lỗi xảy ra khi lưu khách hàng");
+                }
+            });
+        });
+    </script>
+}

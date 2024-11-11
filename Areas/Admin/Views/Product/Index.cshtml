@@ -26,13 +26,13 @@
             <tr>
                 <td>@product.ProductID</td>
                 <td>@product.Name</td>
-                <td>@product.Description</td>
+                <td class="product-description">@product.Description</td>
                 <td>@product.Price.ToString("C0", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"))</td>
                 <td>@product.Stock</td>
                 <td>@product.CreatedDate.ToString("dd/MM/yyyy")</td>
                 <td>
-                    <a href="@Url.Action("Detail", "Product", new { id = product.ProductID })" class="btn btn-info btn-sm">Chi tiết</a>
-                    <a href="@Url.Action("Detail", "Product", new { id = product.ProductID })" class="btn btn-warning btn-sm">Chỉnh sửa</a>
+                    @* <a href="@Url.Action("Detail", "Product", new { id = product.ProductID })" class="btn btn-info btn-sm" style="margin-right: 5px;">Xem</a> *@
+                    <a href="@Url.Action("Detail", "Product", new { id = product.ProductID })" class="btn btn-warning btn-sm" style="margin-right: 5px;">Chỉnh sửa</a>
                     <button class="btn btn-danger btn-sm" onclick="deleteProduct(@product.ProductID)">Xóa</button>
                 </td>
             </tr>

@@ -32,7 +32,7 @@
                                 class="card-img-top" loading="lazy" alt="Sản phẩm 1">
                             <div class="card-body">
                                 <h5 class="card-title">@p.Name</h5>
-                                <p class="card-text">@p.Description</p>
+                                <p class="card-text text-truncate single-line">@p.Description</p>
                                 <p class="text-danger"><strong>@p.Price.ToString("C0", System.Globalization.CultureInfo.GetCultureInfo("vi-VN"))</strong></p>
                                 <a asp-controller="Products" asp-action="ProductsDetails" asp-route-ProductID="@p.ProductID"
                                     class="btn btn-primary">Chi tiết</a>

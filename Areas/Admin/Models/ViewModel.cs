@@ -8,5 +8,6 @@ namespace PhoneShop.Models.ViewModels
     {
         public required Products Product { get; set; }
         public List<Media>? Medias { get; set; }
+
     }
 }

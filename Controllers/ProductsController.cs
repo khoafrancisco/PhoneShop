@@ -13,13 +13,14 @@ public class ProductsController : Controller
         _context = context;
     }
 
-    public IActionResult Index(string searchString, int pageNumber = 1, int pageSize = 4)
+    public IActionResult Index(int category, string searchString, int pageNumber = 1, int pageSize = 4)
     {
+        Console.WriteLine("Category: " + category);
         if (string.IsNullOrEmpty(searchString))
         {
             searchString = "";
         }
-        var products = _context.Products.Where(x => x.Name!.Contains(searchString)).ToList();
+        var products = _context.Products.Where(x => x.Name!.Contains(searchString) && (x.CategoryID == category || category == 0)).ToList();
         int totalProducts = products.Count();
         var productsOnPage = products.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
 

@@ -1,0 +1,61 @@
+@model IEnumerable<PhoneShop.Models.Entities.Customers>
+@{
+    ViewData["Title"] = "Danh sách khách hàng";
+    Layout = "_Layout";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<a href="@Url.Action("Detail", "Customer")" class="btn btn-primary">Thêm khách hàng</a>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Họ và Tên</th>
+            <th>Email</th>
+            <th>Số điện thoại</th>
+            <th>Địa chỉ</th>
+            <th>Ngày tạo</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                <td>@customer.CustomerID</td>
+                <td>@customer.FullName</td>
+                <td>@customer.Email</td>
+                <td>@customer.Phone</td>
+                <td>@customer.Address</td>
+                <td>@customer.CreatedDate.ToString("dd/MM/yyyy")</td>
+                <td>
+                    <a href="@Url.Action("Detail", "Customer", new { id = customer.CustomerID })" class="btn btn-warning btn-sm" style="margin-right: 5px;">Chỉnh sửa</a>
+                    <button class="btn btn-danger btn-sm" onclick="deleteCustomer(@customer.CustomerID)">Xóa</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function deleteCustomer(id) {
+        if (!confirm("Bạn có chắc muốn xóa khách hàng này?")) return;
+
+        $.ajax({
+            url: `@Url.Action("Delete", "Customer", new { area = "Admin" })/${id}`,
+            type: 'DELETE',
+            success: function (response) {
+                alert(response.message);
+                if (response.success) {
+                    location.reload();
+                }
+            },
+            error: function () {
+                alert("Có lỗi xảy ra khi xóa khách hàng. Vui lòng thử lại sau.");
+            }
+        });
+    }
+</script>

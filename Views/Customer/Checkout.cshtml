@@ -1,0 +1,13 @@
+@model PhoneShop.Models.CheckoutViewModel
+
+<h2>Checkout</h2>
+
+<form asp-action="ProcessCheckout" method="post">
+    <div>
+        <label>Chọn phương thức thanh toán:</label><br>
+        <input type="radio" name="PaymentMethod" value="ZaloPay" required> ZaloPay<br>
+        <input type="radio" name="PaymentMethod" value="VNPay"> VNPay<br>
+    </div>
+
+    <button type="submit">Thanh toán</button>
+</form>

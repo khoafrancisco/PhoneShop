@@ -3,12 +3,51 @@
 <div class="container mt-5">
     <h2>Giỏ hàng</h2>
 
+
+
     @if (!Model.Items.Any())
     {
         <p>Giỏ hàng của bạn đang trống.</p>
     }
     else
     {
+
+    <div class="progress-container">
+    <div class="step active">
+        <div class="icon">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+        <p>Kiểm tra giỏ hàng</p>
+    </div>
+    <div class="separator"></div>
+    <div class="step">
+        <div class="icon">
+            <i class="fas fa-user"></i>
+        </div>
+        <p>Thông tin mua hàng</p>
+    </div>
+    <div class="separator"></div>
+    <div class="step">
+        <div class="icon">
+            <i class="fas fa-credit-card"></i>
+        </div>
+        <p>Hình thức thanh toán</p>
+    </div>
+    <div class="separator"></div>
+    <div class="step">
+        <div class="icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <p>Đặt hàng thành công</p>
+    </div>
+</div>
+
+    <!-- Include Font Awesome for icons (you can also use local icons if preferred) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <div class="mt-3"></div>
+
+
         <table class="table">
             <thead>
                 <tr>
@@ -24,7 +63,7 @@
                 @foreach (var item in Model.Items)
                 {
                     <tr data-product-id="@item.products.ProductID">
-                        <td> <img src="~/img/products/@item.products.Image" class="card-img" style="width: 40px; height: 60px;"
+                        <td><img src="~/img/products/@item.products.Image" class="card-img" style="width: auto; height: 100px;"
                                 loading="lazy" alt="@item.products.Name"></td>
                         <td>@item.products.Name</td>
                         <td>@item.products.Price.ToString("#,##0") ₫</td>
@@ -49,8 +88,14 @@
                 }
             </tbody>
         </table>
-
+    <div class="mt-3"></div>
         <h4 class="text-end">Tổng cộng: <span id="totalPrice">@Model.TotalPrice.ToString("#,##0") ₫</span></h4>
+
+        <!-- Continue Shopping and Checkout Buttons -->
+        <div class="d-flex justify-content-between mt-4">
+            <a href="@Url.Action("Index", "Products")" class="btn btn-secondary">Tiếp tục mua sắm</a>
+            <a href="@Url.Action("Checkout", "Cart")" class="btn btn-primary">Thanh toán</a>
+        </div>
     }
 </div>
 

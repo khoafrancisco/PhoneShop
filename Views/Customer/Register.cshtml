@@ -1,13 +1,13 @@
 @model PhoneShop.Models.ViewModels.RegisterViewModel
 
-<h2 class="form-title">Đăng ký tài khoản</h2>
+<h2 class="form-title">Đăng ký</h2>
 
 <form asp-action="Register" method="post" class="register-form">
-
+    
     <div class="form-group">
-        <label asp-for="Email" class="form-label"></label>
-        <input asp-for="Email" class="form-input" placeholder="Nhập email của bạn" />
-        <span asp-validation-for="Email" class="form-validation"></span>
+        <label asp-for="EmailOrPhone" class="form-label"></label>
+        <input asp-for="EmailOrPhone" class="form-input" placeholder="Nhập email hoặc số điện thoại của bạn" />
+        <span asp-validation-for="EmailOrPhone" class="form-validation"></span>
     </div>
 
     <div class="form-group">
@@ -23,4 +23,12 @@
     </div>
     
     <button type="submit" class="form-button">Đăng ký</button>
+    
+    <div class="login-link" style="margin-top: 10px; text-align: center;">
+        <p>Đã có tài khoản? <a asp-action="Login" asp-controller="Customer">Đăng nhập ngay</a></p>
+    </div>
 </form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

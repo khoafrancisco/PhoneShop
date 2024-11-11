@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc.TagHelpers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using PhoneShop.Models.Entities;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,10 +16,12 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
+
         options.LoginPath = "/Admin/User/Login";
         options.AccessDeniedPath = "/Admin/User/AccessDenied";
-    });
+        options.LogoutPath = "/Admin/User/Logout";
 
+    });
 
 
 
@@ -34,7 +37,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 
 
 
-builder.Services.AddRazorPages();
+    builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
