@@ -50,9 +50,11 @@ public class CartController : Controller
     public IActionResult RemoveFromCart(int productId)
     {
         var cart = HttpContext.Session.GetCart();
-        cart.RemoveItem(productId);
-        HttpContext.Session.SetCart(cart);
-
+        if (cart != null)
+        {
+            cart.RemoveItem(productId);
+            HttpContext.Session.SetCart(cart);
+        }
         return RedirectToAction("Index");
     }
 
@@ -60,15 +62,19 @@ public class CartController : Controller
     public JsonResult UpdateQuantity(int productId, int quantity)
     {
         var cart = HttpContext.Session.GetCart();
-        var item = cart.Items.FirstOrDefault(i => i.products.ProductID == productId);
+        if (cart == null || cart.Items == null)
+        {
+            return Json(new { itemTotal = 0, cartTotal = 0 });
+        }
 
+        var item = cart.Items.FirstOrDefault(i => i.products.ProductID == productId);
         if (item != null)
         {
             item.Quantity = quantity;
-            item.TotalAmount = item.products.Price * quantity; // Cập nhật tổng tiền cho item
+            item.TotalAmount = item.products.Price * quantity; // Update total amount for item
             HttpContext.Session.SetCart(cart);
 
-            // Trả về giá trị JSON bao gồm tổng tiền của sản phẩm và tổng tiền của giỏ hàng
+            // Return JSON values including total amount of the item and total amount of the cart
             var itemTotal = item.TotalAmount;
             var cartTotal = cart.Items.Sum(i => i.TotalAmount);
 

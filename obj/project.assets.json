@@ -2799,11 +2799,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PS\\PhoneShop\\PhoneShop.csproj",
+      "projectUniqueName": "d:\\Backup\\PhoneShop\\PhoneShop.csproj",
       "projectName": "PhoneShop",
-      "projectPath": "D:\\PS\\PhoneShop\\PhoneShop.csproj",
+      "projectPath": "d:\\Backup\\PhoneShop\\PhoneShop.csproj",
       "packagesPath": "C:\\Users\\joskh\\.nuget\\packages\\",
-      "outputPath": "D:\\PS\\PhoneShop\\obj\\",
+      "outputPath": "d:\\Backup\\PhoneShop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\joskh\\AppData\\Roaming\\NuGet\\NuGet.Config",

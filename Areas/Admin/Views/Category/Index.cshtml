@@ -11,7 +11,8 @@
 <table class="table mt-3">
     <thead>
         <tr>
-            <th>ID</th>
+            <th>STT</th>
+            <th hidden>ID</th>
             <th>Tên danh mục</th>
             <th>Hành động</th>
         </tr>
@@ -20,7 +21,8 @@
         @foreach (var category in Model)
         {
             <tr>
-                <td>@category.CategoryID</td>
+                <td>@(Model.ToList().IndexOf(category) + 1)</td>
+                <td hidden>@category.CategoryID</td>
                 <td>@category.CategoryName</td>
                 <td>
                     <a href="@Url.Action("Detail", "Category", new { id = category.CategoryID })" class="btn btn-info btn-sm">Chi tiết</a>

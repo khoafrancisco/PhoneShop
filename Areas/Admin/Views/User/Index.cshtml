@@ -1,3 +1,6 @@
+@model List<PhoneShop.Models.Entities.Users>
+
+
 @{
     ViewData["Title"] = "Quản lý người dùng";
     Layout = "_Layout";
@@ -10,8 +13,9 @@
     <table class="table mt-3">
         <thead>
             <tr>
+                <th>STT</th>
                 <th>Tên đăng nhập</th>
-                <th>Mật khẩu</th>
+                <th hidden>Mật khẩu</th>
                 <th>Quyền</th>
                 <th>Thao tác</th>
             </tr>
@@ -20,8 +24,9 @@
             @foreach (var users in Model)
             {
                 <tr>
+                    <td>@(Model.ToList().IndexOf(users) + 1)</td>
                     <td>@users.UserName</td>
-                    <td>
+                    <td hidden>
                         <i id="toggle-password-@users.UserID" class="fas fa-eye"
                             onclick="togglePassword('@users.UserID')"></i>
                         <input type="password" id="password-@users.UserID" value="@users.PasswordHash">

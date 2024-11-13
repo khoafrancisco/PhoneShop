@@ -1,0 +1,38 @@
+@model IEnumerable<PhoneShop.Models.Entities.Orders>
+@{
+    ViewData["Title"] = "Danh Sách Đơn Hàng";
+    Layout = "_Layout";
+}
+<h2>Danh Sách Đơn Hàng</h2>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Customer ID</th>
+            <th>Order Date</th>
+            <th>Total Amount</th>
+            <th>Payment Status</th>
+            <th>Shipping Address</th>
+            <th>Discount</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.OrderID</td>
+                <td>@order.CustomerID</td>
+                <td>@order.OrderDate.ToString("yyyy-MM-dd")</td>
+                <td>@order.TotalAmount</td>
+                <td>@order.PaymentStatus</td>
+                <td>@order.ShippingAddress</td>
+                <td>@order.Discount</td>
+                <td>
+                    <a href="@Url.Action("Details", new { id = order.OrderID })" class="btn btn-info">Chi Tiết</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

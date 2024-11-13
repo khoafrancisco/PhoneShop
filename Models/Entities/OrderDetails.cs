@@ -8,11 +8,15 @@ public class OrderDetails
 {
     [Key]
     public int OrderDetailID { get; set; }
+
     public int OrderID { get; set; }
     [ForeignKey("OrderID")]
+    public virtual Orders ? Order { get; set; }  // Navigation property to Orders
+
     public int ProductID { get; set; }
     [ForeignKey("ProductID")]
-    public int Quantity { get; set; }
-    public decimal Price { get; set; }
+    public virtual Products ? Product { get; set; }  // Navigation property to Product
 
+    public int Quantity { get; set; }
+    public decimal UnitPrice { get; set; }
 }

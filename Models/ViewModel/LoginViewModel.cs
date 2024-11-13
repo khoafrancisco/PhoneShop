@@ -1,13 +1,15 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace PhoneShop.Models.ViewModels;
-
-public class LoginViewModel
+namespace PhoneShop.Models.ViewModels
 {
-    [Required(ErrorMessage = "Email không được để trống")]
-    [EmailAddress(ErrorMessage = "Email không đúng định dạng")]
-    public string Email { get; set; } = string.Empty;
+    public class LoginViewModel
+    {
 
-    [Required(ErrorMessage = "Mật khẩu không được để trống")]
-    public string Password { get; set; } = string.Empty;
+        [Required(ErrorMessage = "Số điện thoại không được để trống")]
+        [Phone(ErrorMessage = "Số điện thoại không đúng định dạng")]
+        public string Phone { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "Mật khẩu không được để trống")]
+        public string Password { get; set; } = string.Empty;
+    }
 }

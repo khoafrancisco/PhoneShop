@@ -1,511 +1,511 @@
 {
   "Files": [
     {
-      "Id": "D:\\PS\\PhoneShop\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PhoneShop.bundle.scp.css",
+      "Id": "D:\\Backup\\PhoneShop\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PhoneShop.bundle.scp.css",
       "PackagePath": "staticwebassets\\PhoneShop.bundle.scp.css"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\css\\site.css",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\favicon.ico",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\customers\\customer1.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\customers\\customer1.jpg",
       "PackagePath": "staticwebassets\\img\\customers\\customer1.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\customers\\customer2.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\customers\\customer2.jpg",
       "PackagePath": "staticwebassets\\img\\customers\\customer2.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\customers\\customer3.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\customers\\customer3.jpg",
       "PackagePath": "staticwebassets\\img\\customers\\customer3.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\customers\\customer4.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\customers\\customer4.jpg",
       "PackagePath": "staticwebassets\\img\\customers\\customer4.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\customers\\customer5.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\customers\\customer5.jpg",
       "PackagePath": "staticwebassets\\img\\customers\\customer5.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\customers\\customer6.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\customers\\customer6.jpg",
       "PackagePath": "staticwebassets\\img\\customers\\customer6.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\customers\\customer7.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\customers\\customer7.jpg",
       "PackagePath": "staticwebassets\\img\\customers\\customer7.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\customers\\customer8.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\customers\\customer8.jpg",
       "PackagePath": "staticwebassets\\img\\customers\\customer8.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\customers\\customer9.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\customers\\customer9.jpg",
       "PackagePath": "staticwebassets\\img\\customers\\customer9.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\1.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\1.jpg",
       "PackagePath": "staticwebassets\\img\\products\\1.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\1.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\1.png",
       "PackagePath": "staticwebassets\\img\\products\\1.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\2.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\2.jpg",
       "PackagePath": "staticwebassets\\img\\products\\2.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\3.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\3.jpg",
       "PackagePath": "staticwebassets\\img\\products\\3.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\4.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\4.jpg",
       "PackagePath": "staticwebassets\\img\\products\\4.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\5.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\5.jpg",
       "PackagePath": "staticwebassets\\img\\products\\5.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\6.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\6.png",
       "PackagePath": "staticwebassets\\img\\products\\6.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\7.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\7.png",
       "PackagePath": "staticwebassets\\img\\products\\7.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Ip12-1.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip12-1.png",
       "PackagePath": "staticwebassets\\img\\products\\Ip12-1.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Ip12-2.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip12-2.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Ip12-2.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Ip12-3.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip12-3.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Ip12-3.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Ip12-4.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip12-4.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Ip12-4.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Ip12-5.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip12-5.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Ip12-5.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Ip12-6.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip12-6.png",
       "PackagePath": "staticwebassets\\img\\products\\Ip12-6.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Ip12-7.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip12-7.png",
       "PackagePath": "staticwebassets\\img\\products\\Ip12-7.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Ip13-1.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip13-1.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Ip13-1.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Ip13-2.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip13-2.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Ip13-2.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Ip13-3.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip13-3.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Ip13-3.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Ip13-4.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip13-4.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Ip13-4.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Ip13-5.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip13-5.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Ip13-5.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Ip14-1.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip14-1.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Ip14-1.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Ip14-2.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip14-2.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Ip14-2.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Ip14-3.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip14-3.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Ip14-3.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Ip14-4.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip14-4.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Ip14-4.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Ip14-5.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip14-5.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Ip14-5.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Iphonex1.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Iphonex1.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Iphonex1.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Iphonex2.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Iphonex2.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Iphonex2.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Iphonex3.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Iphonex3.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Iphonex3.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Iphonex4.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Iphonex4.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Iphonex4.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\Iphonex5.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Iphonex5.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Iphonex5.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\anh1.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\anh1.jpg",
       "PackagePath": "staticwebassets\\img\\products\\anh1.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\anh2.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\anh2.jpg",
       "PackagePath": "staticwebassets\\img\\products\\anh2.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\anh3.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\anh3.jpg",
       "PackagePath": "staticwebassets\\img\\products\\anh3.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\anh4.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\anh4.jpg",
       "PackagePath": "staticwebassets\\img\\products\\anh4.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\anh5.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\anh5.jpg",
       "PackagePath": "staticwebassets\\img\\products\\anh5.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\iphone-13-02.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\iphone-13-02.jpg",
       "PackagePath": "staticwebassets\\img\\products\\iphone-13-02.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\iphone-13-128-2gb.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\iphone-13-128-2gb.jpg",
       "PackagePath": "staticwebassets\\img\\products\\iphone-13-128-2gb.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\iphone-13-128-3gb.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\iphone-13-128-3gb.jpg",
       "PackagePath": "staticwebassets\\img\\products\\iphone-13-128-3gb.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\iphone-13-128gb-4.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\iphone-13-128gb-4.jpg",
       "PackagePath": "staticwebassets\\img\\products\\iphone-13-128gb-4.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\iphone-13-128gb.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\iphone-13-128gb.jpg",
       "PackagePath": "staticwebassets\\img\\products\\iphone-13-128gb.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\z6011905086763_066468b44d4d46a3a72e29546ab8988c.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\z6011905086763_066468b44d4d46a3a72e29546ab8988c.jpg",
       "PackagePath": "staticwebassets\\img\\products\\z6011905086763_066468b44d4d46a3a72e29546ab8988c.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\products\\z6011905769343_29c24acf6793de96ea5fa59c286eff80.jpg",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\z6011905769343_29c24acf6793de96ea5fa59c286eff80.jpg",
       "PackagePath": "staticwebassets\\img\\products\\z6011905769343_29c24acf6793de96ea5fa59c286eff80.jpg"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\social\\apple.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\social\\apple.png",
       "PackagePath": "staticwebassets\\img\\social\\apple.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\social\\cart.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\social\\cart.png",
       "PackagePath": "staticwebassets\\img\\social\\cart.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\social\\facebook.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\social\\facebook.png",
       "PackagePath": "staticwebassets\\img\\social\\facebook.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\social\\iphone-banner1.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\social\\iphone-banner1.png",
       "PackagePath": "staticwebassets\\img\\social\\iphone-banner1.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\social\\iphone-banner2.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\social\\iphone-banner2.png",
       "PackagePath": "staticwebassets\\img\\social\\iphone-banner2.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\social\\iphone-banner3.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\social\\iphone-banner3.png",
       "PackagePath": "staticwebassets\\img\\social\\iphone-banner3.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\social\\iphone-banner4.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\social\\iphone-banner4.png",
       "PackagePath": "staticwebassets\\img\\social\\iphone-banner4.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\social\\iphone-banner5.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\social\\iphone-banner5.png",
       "PackagePath": "staticwebassets\\img\\social\\iphone-banner5.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\social\\mastercard.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\social\\mastercard.png",
       "PackagePath": "staticwebassets\\img\\social\\mastercard.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\social\\momo.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\social\\momo.png",
       "PackagePath": "staticwebassets\\img\\social\\momo.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\social\\shop.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\social\\shop.png",
       "PackagePath": "staticwebassets\\img\\social\\shop.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\social\\tiktok.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\social\\tiktok.png",
       "PackagePath": "staticwebassets\\img\\social\\tiktok.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\social\\visa.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\social\\visa.png",
       "PackagePath": "staticwebassets\\img\\social\\visa.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\social\\vnpay.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\social\\vnpay.png",
       "PackagePath": "staticwebassets\\img\\social\\vnpay.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\img\\social\\zalo.png",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\social\\zalo.png",
       "PackagePath": "staticwebassets\\img\\social\\zalo.png"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\js\\site.js",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\PS\\PhoneShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

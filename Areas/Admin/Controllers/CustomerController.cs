@@ -6,6 +6,7 @@ using PhoneShop.Models.Entities;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using System;
 
 namespace PhoneShop.Admin.Controllers
 {
@@ -38,7 +39,9 @@ namespace PhoneShop.Admin.Controllers
                 Email = string.Empty,
                 Password = string.Empty,
                 Phone = string.Empty,
-                Address = string.Empty
+                Province = string.Empty,
+                District = string.Empty,
+                Ward = string.Empty,
             };
 
             if (customer == null && id.HasValue)
@@ -73,7 +76,13 @@ namespace PhoneShop.Admin.Controllers
                     existingCustomer.FullName = customer.FullName;
                     existingCustomer.Email = customer.Email;
                     existingCustomer.Phone = customer.Phone;
-                    existingCustomer.Address = customer.Address;
+                    existingCustomer.Note = customer.Note;
+                    existingCustomer.DeliveryMethod = customer.DeliveryMethod;
+                    existingCustomer.Province = customer.Province;
+                    existingCustomer.District = customer.District;
+                    existingCustomer.Ward = customer.Ward;
+                    existingCustomer.PaymentMethod = customer.PaymentMethod;
+                    existingCustomer.TotalAmount = customer.TotalAmount;
                     existingCustomer.Password = customer.Password;
 
                     _appDbContext.Customers.Update(existingCustomer);
@@ -93,7 +102,6 @@ namespace PhoneShop.Admin.Controllers
                 return Json(new { success = false, message = "Có lỗi xảy ra khi lưu khách hàng" });
             }
         }
-
 
         // DELETE: Admin/Customer/Delete/5
         [HttpDelete]

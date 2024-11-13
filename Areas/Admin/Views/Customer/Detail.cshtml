@@ -34,9 +34,54 @@
     </div>
 
     <div class="form-group">
-        <label asp-for="Address">Địa chỉ</label>
-        <input asp-for="Address" class="form-control" />
-        <span asp-validation-for="Address" class="text-danger"></span>
+        <label asp-for="Note">Lời nhắn</label>
+        <textarea asp-for="Note" class="form-control"></textarea>
+        <span asp-validation-for="Note" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DeliveryMethod">Hình thức nhận hàng</label>
+        <select asp-for="DeliveryMethod" class="form-control">
+            <option value="">Chọn hình thức nhận hàng</option>
+            <option value="Delivery">Giao hàng tận nơi</option>
+            <option value="StorePickup">Nhận hàng tại cửa hàng</option>
+        </select>
+        <span asp-validation-for="DeliveryMethod" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Province">Tỉnh / Thành phố</label>
+        <input asp-for="Province" class="form-control" />
+        <span asp-validation-for="Province" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="District">Quận / Huyện</label>
+        <input asp-for="District" class="form-control" />
+        <span asp-validation-for="District" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Ward">Phường / Xã</label>
+        <input asp-for="Ward" class="form-control" />
+        <span asp-validation-for="Ward" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PaymentMethod">Phương thức thanh toán</label>
+        <select asp-for="PaymentMethod" class="form-control">
+            <option value="">Chọn phương thức thanh toán</option>
+            <option value="Online">Thanh toán online</option>
+            <option value="BankTransfer">Chuyển khoản ngân hàng</option>
+            <option value="CashOnDelivery">Thanh toán khi nhận hàng</option>
+        </select>
+        <span asp-validation-for="PaymentMethod" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TotalAmount">Tổng tiền</label>
+        <input asp-for="TotalAmount" type="number" class="form-control" step="0.01" />
+        <span asp-validation-for="TotalAmount" class="text-danger"></span>
     </div>
 
     <!-- Div chứa các nút với lớp khoảng cách -->

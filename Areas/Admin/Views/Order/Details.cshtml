@@ -1,0 +1,65 @@
+@model PhoneShop.Models.Entities.Orders
+
+<h2>Chi Tiết Đơn Hàng - @Model.OrderID</h2>
+
+<div>
+    <h4>Thông Tin Khách Hàng</h4>
+    <p>Customer ID: @Model.CustomerID</p>
+    <p>Shipping Address: @Model.ShippingAddress</p>
+    <p>Order Date: @Model.OrderDate.ToString("yyyy-MM-dd")</p>
+    <p>Total Amount: @Model.TotalAmount</p>
+    <p>Payment Status: @Model.PaymentStatus</p>
+</div>
+
+<div>
+    <h4>Chi Tiết Sản Phẩm</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.OrderDetails != null)
+            {
+                @foreach (var item in Model.OrderDetails)
+                {
+                    <tr>
+                        <td>@item.ProductID</td>
+                        <td>@item.Quantity</td>
+                        <td>@item.UnitPrice</td>
+                        <td>@(item.Quantity * item.UnitPrice)</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <h4>Lịch Sử Trạng Thái Đơn Hàng</h4>
+    <ul>
+        @foreach (var status in ViewBag.OrderStatus)
+        {
+            <li>@status.Status - @status.UpdatedDate.ToString("yyyy-MM-dd HH:mm:ss")</li>
+        }
+    </ul>
+</div>
+
+<div>
+    <h4>Cập Nhật Trạng Thái Đơn Hàng</h4>
+    <form asp-action="UpdateStatus" method="post">
+        <input type="hidden" name="id" value="@Model.OrderID" />
+        <select name="newStatus" class="form-control">
+            <option value="Đang xử lý">Đang xử lý</option>
+            <option value="Đã thanh toán">Đã thanh toán</option>
+            <option value="Đang giao hàng">Đang giao hàng</option>
+            <option value="Hoàn tất">Hoàn tất</option>
+            <option value="Đã hủy">Đã hủy</option>
+        </select>
+        <button type="submit" class="btn btn-primary mt-2">Cập Nhật</button>
+    </form>
+</div>
