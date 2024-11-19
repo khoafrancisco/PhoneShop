@@ -13,12 +13,44 @@
         <tr>
             <th>STT</th>
             <th hidden>ID</th>
-            <th>Họ và Tên</th>
+            <th>
+                <a asp-action="Index" asp-route-sortColumn="FullName" asp-route-sortOrder="@ViewData["FullNameSortOrder"]">
+                    Họ và Tên
+                    @if (ViewData["SortColumn"] as string == "FullName")
+                    {
+                        <span class="sort-arrow">@(ViewData["SortOrder"] as string == "asc" ? "▲" : "▼")</span>
+                    }
+                </a>
+            </th>
             <th>Email</th>
             <th>Số điện thoại</th>
-            <th>Tỉnh / Thành phố</th>
-            <th>Quận / Huyện</th>
-            <th>Phường / Xã</th>
+            <th>
+                <a asp-action="Index" asp-route-sortColumn="Province" asp-route-sortOrder="@ViewData["ProvinceSortOrder"]">
+                    Tỉnh/TP
+                    @if (ViewData["SortColumn"] as string == "Province")
+                    {
+                        <span>@(ViewData["SortOrder"] as string == "asc" ? "▲" : "▼")</span>
+                    }
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortColumn="District" asp-route-sortOrder="@ViewData["DistrictSortOrder"]">
+                    Quận/Huyện
+                    @if (ViewData["SortColumn"] as string == "District")
+                    {
+                        <span>@(ViewData["SortOrder"] as string == "asc" ? "▲" : "▼")</span>
+                    }
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortColumn="Ward" asp-route-sortOrder="@ViewData["WardSortOrder"]">
+                    Phường / Xã
+                    @if (ViewData["SortColumn"] as string == "Ward")
+                    {
+                        <span>@(ViewData["SortOrder"] as string == "asc" ? "▲" : "▼")</span>
+                    }
+                </a>
+            </th>
             <th>Hành động</th>
         </tr>
     </thead>
@@ -42,24 +74,3 @@
         }
     </tbody>
 </table>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    function deleteCustomer(id) {
-        if (!confirm("Bạn có chắc muốn xóa khách hàng này?")) return;
-
-        $.ajax({
-            url: `@Url.Action("Delete", "Customer", new { area = "Admin" })/${id}`,
-            type: 'DELETE',
-            success: function (response) {
-                alert(response.message);
-                if (response.success) {
-                    location.reload();
-                }
-            },
-            error: function () {
-                alert("Có lỗi xảy ra khi xóa khách hàng. Vui lòng thử lại sau.");
-            }
-        });
-    }
-</script>

@@ -262,3 +262,23 @@ footer {
 }
 
 
+.table thead th a {
+  color: inherit; /* Giữ nguyên màu chữ ban đầu */
+  text-decoration: none; /* Loại bỏ gạch chân liên kết */
+}
+.table thead th a:hover {
+  color: inherit; /* Giữ nguyên màu chữ khi hover */
+}
+.sort-arrow {
+  font-size: 0.8em; /* Kích thước mũi tên nhỏ hơn chữ */
+  margin-left: 5px; /* Khoảng cách giữa chữ và mũi tên */
+}
+
+
+
+
+
+
+
+
+

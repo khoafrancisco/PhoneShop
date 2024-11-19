@@ -1,40 +1,61 @@
-// using Microsoft.AspNetCore.Mvc;
-// using PhoneShop.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using PhoneShop.Models;
+using PhoneShop.Models.Entities;
+using System;
 
-// namespace PhoneShop.Controllers
-// {
-//     public class ReviewsController : Controller
-//     {
-//         private readonly AppDbContext _context;
+namespace PhoneShop.Controllers
+{
+    [Route("review")]
+    public class ReviewController : Controller
+    {
+        private readonly ILogger<ReviewController> _logger;
+        private readonly AppDbContext _context;
 
-//         private readonly DbContextOptions<AppDbContext> _options;
+        // Constructor
+        public ReviewController(ILogger<ReviewController> logger, AppDbContext context)
+        {
+            _logger = logger;
+            _context = context;
+        }
 
-//         public ReviewsController(DbContextOptions<AppDbContext> options)
-//         {
-//             _options = options;
-//             _context = new AppDbContext(_options);
-//         }
+        [HttpPost("add")]
+        public IActionResult AddReview(int productId, string comment, int rating)
+        {
+            // Validate rating range
+            if (rating < 1 || rating > 5)
+            {
+                ModelState.AddModelError("", "Rating must be between 1 and 5.");
+            }
 
-//         // GET: Reviews for a specific product
-//         public ActionResult Index(int productId)
-//         {
-//             var reviews = _context.Reviews.Where(r => r.ProductID == productId).ToList();
-//             ViewBag.ProductID = productId; // For use in the view
-//             return View(reviews);
-//         }
+            if (ModelState.IsValid)
+            {
+                // Create a new review object
+                var review = new Reviews
+                {
+                    ProductID = productId,
+                    CustomerID = GetLoggedInCustomerId(), // Replace with actual logic to fetch logged-in customer ID
+                    Rating = rating,
+                    Comment = comment,
+                    CreatedDate = DateTime.Now
+                };
 
-//         // POST: Add a new review
-//         [HttpPost]
-//         public ActionResult Create(Review review)
-//         {
-//             if (ModelState.IsValid)
-//             {
-//                 review.CreatedDate = DateTime.Now;
-//                 _context.Reviews.Add(review);
-//                 _context.SaveChanges();
-//                 return RedirectToAction("Index", new { productId = review.ProductID });
-//             }
-//             return View(review);
-//         }
-//     }
-// }
+                // Save review to the database
+                _context.Reviews.Add(review);
+                _context.SaveChanges();
+
+                // Redirect back to product details page
+                return RedirectToAction("ProductDetails", "Products", new { productId });
+            }
+
+            // If invalid, return to product details with errors
+            return RedirectToAction("ProductDetails", "Products", new { productId });
+        }
+
+        private int GetLoggedInCustomerId()
+        {
+            // Replace this with actual authentication logic (e.g., User.Identity.Name)
+            return 1; // For now, using a hardcoded ID
+        }
+    }
+}

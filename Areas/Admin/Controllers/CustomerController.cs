@@ -11,7 +11,8 @@ using System;
 namespace PhoneShop.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "Admin")]
+    // [Authorize(Roles = "Admin")]
+    [Authorize(AuthenticationSchemes = "AdminCookie", Roles = "Admin")]
     public class CustomerController : Controller
     {
         private readonly AppDbContext _appDbContext;
@@ -24,10 +25,27 @@ namespace PhoneShop.Admin.Controllers
         }
 
         // GET: Admin/Customer
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortColumn, string sortOrder)
         {
-            var customers = await _appDbContext.Customers.ToListAsync();
-            return View(customers);
+            var customers = _appDbContext.Customers.AsQueryable();
+
+            ViewData["FullNameSortOrder"] = sortColumn == "FullName" && sortOrder == "asc" ? "desc" : "asc";
+            ViewData["ProvinceSortOrder"] = sortColumn == "Province" && sortOrder == "asc" ? "desc" : "asc";
+            ViewData["DistrictSortOrder"] = sortColumn == "District" && sortOrder == "asc" ? "desc" : "asc";
+            ViewData["WardSortOrder"] = sortColumn == "Ward" && sortOrder == "asc" ? "desc" : "asc";
+            ViewData["SortColumn"] = sortColumn;
+            ViewData["SortOrder"] = sortOrder;
+
+            customers = sortColumn switch
+            {
+                "FullName" => sortOrder == "asc" ? customers.OrderBy(c => c.FullName) : customers.OrderByDescending(c => c.FullName),
+                "Province" => sortOrder == "asc" ? customers.OrderBy(c => c.Province) : customers.OrderByDescending(c => c.Province),
+                "District" => sortOrder == "asc" ? customers.OrderBy(c => c.District) : customers.OrderByDescending(c => c.District),
+                "Ward" => sortOrder == "asc" ? customers.OrderBy(c => c.Ward) : customers.OrderByDescending(c => c.Ward),
+                _ => customers.OrderBy(c => c.CustomerID)
+            };
+
+            return View(await customers.ToListAsync());
         }
 
         // GET: Admin/Customer/Detail/5
@@ -65,14 +83,12 @@ namespace PhoneShop.Admin.Controllers
             {
                 if (customer.CustomerID > 0)
                 {
-                    // Nạp khách hàng từ cơ sở dữ liệu để thực hiện cập nhật
                     var existingCustomer = await _appDbContext.Customers.FindAsync(customer.CustomerID);
                     if (existingCustomer == null)
                     {
                         return Json(new { success = false, message = "Không tìm thấy khách hàng để cập nhật" });
                     }
 
-                    // Cập nhật các thuộc tính cần thiết
                     existingCustomer.FullName = customer.FullName;
                     existingCustomer.Email = customer.Email;
                     existingCustomer.Phone = customer.Phone;
@@ -89,7 +105,6 @@ namespace PhoneShop.Admin.Controllers
                 }
                 else
                 {
-                    // Thêm khách hàng mới
                     customer.CreatedDate = DateTime.Now;
                     await _appDbContext.Customers.AddAsync(customer);
                 }
@@ -97,8 +112,9 @@ namespace PhoneShop.Admin.Controllers
                 await _appDbContext.SaveChangesAsync();
                 return Json(new { success = true, message = "Lưu khách hàng thành công" });
             }
-            catch
+            catch (Exception ex)
             {
+                _logger.LogError(ex, "Có lỗi xảy ra khi lưu khách hàng");
                 return Json(new { success = false, message = "Có lỗi xảy ra khi lưu khách hàng" });
             }
         }
@@ -119,8 +135,9 @@ namespace PhoneShop.Admin.Controllers
                 await _appDbContext.SaveChangesAsync();
                 return Json(new { success = true, message = "Xóa khách hàng thành công" });
             }
-            catch
+            catch (Exception ex)
             {
+                _logger.LogError(ex, "Có lỗi xảy ra khi xóa khách hàng");
                 return Json(new { success = false, message = "Có lỗi xảy ra khi xóa khách hàng" });
             }
         }

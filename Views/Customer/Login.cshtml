@@ -2,11 +2,17 @@
 
 <h2 class="form-title">Đăng nhập</h2>
 
-<form asp-action="Login" method="post" class="login-form">
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["SuccessMessage"]
+    </div>
+}
 
+<form asp-action="Login" method="post" class="login-form">
     <div class="form-group">
         <label asp-for="Phone" class="form-label"></label>
-        <input asp-for="Phone" class="form-input" placeholder="Nhập email của bạn" />
+        <input asp-for="Phone" class="form-input" placeholder="Nhập số điện thoại của bạn" />
         <span asp-validation-for="Phone" class="form-validation"></span>
     </div>
 
@@ -17,8 +23,12 @@
     </div>
     
     <button type="submit" class="form-button">Đăng nhập</button>
-    
-    <div class="register-link" style="margin-top: 10px; text-align: center;">
+
+    <div class="register-link mt-3" style="margin-top: 10px; text-align: center;">
         <p>Chưa có tài khoản? <a asp-action="Register" asp-controller="Customer">Đăng ký ngay</a></p>
     </div>
 </form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

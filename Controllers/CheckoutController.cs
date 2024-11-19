@@ -1,8 +1,28 @@
+using System.Text;
+using System.Text.Json;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PhoneShop.Models;
+using PhoneShop.Models.Payment;
 
+[Authorize(AuthenticationSchemes = "CustomerCookie", Roles = "Customer")]
 public class CheckoutController : Controller
 {
+    private readonly IConfiguration _configuration;
+    private readonly IHttpContextAccessor _httpContextAccessor;
+    private readonly IVnPayServices _vnPayService;
+
+    public CheckoutController(IConfiguration configuration, IHttpContextAccessor httpContextAccessor, IVnPayServices vnPayService)
+    {
+        _configuration = configuration;
+        _httpContextAccessor = httpContextAccessor;
+        _vnPayService = vnPayService;
+    }
+
+    public IActionResult Index(OrderViewModel model)
+    {
+        return View(model);
+    }
     [HttpPost]
     public IActionResult ProcessCheckout(CheckoutViewModel model)
     {
@@ -25,9 +45,20 @@ public class CheckoutController : Controller
         return View();
     }
 
-    public IActionResult VNPayPayment()
+    [HttpPost]
+    public IActionResult CreatePaymentUrlVnpay(PaymentInformationModel model)
     {
-        // Thêm logic xử lý thanh toán qua VNPay
-        return View();
+        var url = _vnPayService.CreatePaymentUrl(model, HttpContext);
+
+        return Redirect(url);
     }
+    [HttpGet]
+    public IActionResult PaymentCallbackVnpay()
+    {
+        var response = _vnPayService.PaymentExecute(Request.Query);
+
+        return View(response);
+    }
+
+
 }

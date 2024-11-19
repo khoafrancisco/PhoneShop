@@ -37,4 +37,6 @@ public class Customers
     public decimal? TotalAmount { get; set; }
 
     public DateTime CreatedDate { get; set; }
+
+    public ICollection<Reviews> ? Reviews { get; set;}
 }

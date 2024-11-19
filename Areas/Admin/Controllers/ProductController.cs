@@ -15,7 +15,8 @@ using System.IO;
 namespace PhoneShop.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "Admin")]
+    // [Authorize(Roles = "Admin")]
+[Authorize(AuthenticationSchemes = "AdminCookie", Roles = "Admin")]
     public class ProductController : Controller
     {
         private readonly AppDbContext _appDbContext;
@@ -30,10 +31,27 @@ namespace PhoneShop.Admin.Controllers
         }
 
         // GET: Admin/Product
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, int ?CategoryID)
         {
-            var products = await _appDbContext.Products.Include(p => p.Category).ToListAsync();
-            return View(products);
+            var products = _appDbContext.Products.Include(p => p.Category).AsQueryable();
+
+            if (CategoryID.HasValue)
+            {
+                products = products.Where(p => p.CategoryID == CategoryID.Value);
+            }
+            products = sortOrder switch
+            {
+                "name_desc" => products.OrderByDescending(p => p.Name),
+                "price" => products.OrderBy(p => p.Price),
+                "price_desc" => products.OrderByDescending(p => p.Price),
+                "stock" => products.OrderBy(p => p.Stock),
+                "stock_desc" => products.OrderByDescending(p => p.Stock),
+                _ => products.OrderBy(p => p.Name),
+            };
+            ViewData["Categories"] = new SelectList(await _appDbContext.Categories.ToListAsync(), "CategoryID", "CategoryName");
+            ViewData["SortOrder"] = sortOrder;
+
+            return View(await products.ToListAsync());
         }
 
         // GET: Admin/Product/Detail/5

@@ -5,16 +5,22 @@ using PhoneShop.Models;
 using System.Threading.Tasks;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+
 
 namespace PhoneShop.Controllers
 {
     public class CustomerController : Controller
     {
-        private readonly AppDbContext _context;
+        private readonly AppDbContext _appDbContext;
 
-        public CustomerController(AppDbContext context)
+        public AuthenticationProperties? CustomerCookie { get; private set; }
+
+        public CustomerController(AppDbContext appDbContext)
         {
-            _context = context;
+            _appDbContext = appDbContext;
         }
 
         // GET: Login
@@ -22,14 +28,55 @@ namespace PhoneShop.Controllers
         {
             return View();
         }
-
-        // POST: Login
         [HttpPost]
-        public async Task<IActionResult> Login(LoginViewModel model)
+        [AllowAnonymous]
+        public async Task<IActionResult> Login(LoginViewModel loginModel, string? returnUrl = null)
         {
             if (ModelState.IsValid)
             {
-                var customer = await _context.Customers
+                Customers? customer = _appDbContext.Customers.Where(u => u.Phone == loginModel.Phone && u.Password == loginModel.Password).FirstOrDefault();
+                if (customer != null)
+                {
+                    var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, customer.Phone!),
+                    new Claim(ClaimTypes.Role, "Customer"),
+                };
+
+                    var claimsIdentity = new ClaimsIdentity(
+                        claims, "CustomerCookie");
+
+                    var authProperties = new AuthenticationProperties
+                    {
+                        ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(60),
+                    };
+                    await HttpContext.SignInAsync(
+                        "CustomerCookie",
+                        new ClaimsPrincipal(claimsIdentity),
+                        authProperties);
+                        Console.WriteLine("===="+returnUrl);
+                    return LocalRedirect(returnUrl ?? "/Home/Index");
+                }
+                else
+                {
+                    ViewBag.Message = "Tài khoản không tồn tại";
+                }
+            }
+            else
+            {
+                ViewBag.Message = "Không hợp lệ";
+            }
+            return View(loginModel);
+
+        }
+
+        // POST: Login
+        [HttpPost]
+        public async Task<IActionResult> LoginOld(LoginViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var customer = await _appDbContext.Customers
                     .Where(c => c.Phone == model.Phone && c.Password == model.Password)
                     .FirstOrDefaultAsync();
 
@@ -55,13 +102,14 @@ namespace PhoneShop.Controllers
         }
 
         // POST: Register
+        // POST: Register
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
             {
-                // Check if the phone number already exists
-                var existingCustomer = await _context.Customers
+                // Kiểm tra xem số điện thoại đã tồn tại chưa
+                var existingCustomer = await _appDbContext.Customers
                     .FirstOrDefaultAsync(c => c.Phone == model.Phone);
 
                 if (existingCustomer != null)
@@ -70,31 +118,30 @@ namespace PhoneShop.Controllers
                     return View(model);
                 }
 
-                // Create a new customer entity
+                // Tạo một khách hàng mới
                 var newCustomer = new Customers
                 {
                     Phone = model.Phone,
-                    Password = model.Password, // Consider hashing the password
+                    Password = model.Password, // Cân nhắc mã hóa mật khẩu
                     CreatedDate = DateTime.Now
                 };
 
-                // Add the new customer to the database
-                _context.Customers.Add(newCustomer);
-                await _context.SaveChangesAsync();
+                // Thêm khách hàng vào cơ sở dữ liệu
+                _appDbContext.Customers.Add(newCustomer);
+                await _appDbContext.SaveChangesAsync();
 
-                // Redirect to the login page after successful registration
+                // Lưu thông báo vào TempData
+                TempData["SuccessMessage"] = "Tài khoản của bạn đã được tạo thành công. Vui lòng đăng nhập.";
+
+                // Chuyển hướng đến trang đăng nhập sau khi đăng ký thành công
                 return RedirectToAction("Login", "Customer");
             }
 
-            // If we reach here, something went wrong, redisplay the form
+            // Nếu có lỗi, hiển thị lại form đăng ký
             return View(model);
         }
 
         // GET: Logout
-        public IActionResult Logout()
-        {
-            // Handle logout (e.g., clear session)
-            return RedirectToAction("Index", "Home");
-        }
+        
     }
 }

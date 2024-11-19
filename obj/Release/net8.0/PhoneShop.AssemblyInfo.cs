@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PhoneShop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+539b1656f9c8d55db1b4e759f3722217cb9489fe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dca82ec07b28a62907018c17af0fab0662116698")]
 [assembly: System.Reflection.AssemblyProductAttribute("PhoneShop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PhoneShop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

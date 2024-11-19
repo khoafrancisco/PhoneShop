@@ -1,8 +1,10 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PhoneShop.Models;
 using PhoneShop.Models.Entities; // Sửa lại cho đúng namespace của bạn
 using System;
 using System.Linq;
+
 
 public class CartController : Controller
 {

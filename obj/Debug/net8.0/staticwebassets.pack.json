@@ -49,28 +49,480 @@
       "PackagePath": "staticwebassets\\img\\customers\\customer9.jpg"
     },
     {
-      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\1.jpg",
-      "PackagePath": "staticwebassets\\img\\products\\1.jpg"
-    },
-    {
       "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\1.png",
       "PackagePath": "staticwebassets\\img\\products\\1.png"
     },
     {
-      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\2.jpg",
-      "PackagePath": "staticwebassets\\img\\products\\2.jpg"
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\12312.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\12312.jpg"
     },
     {
-      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\3.jpg",
-      "PackagePath": "staticwebassets\\img\\products\\3.jpg"
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\1231231.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\1231231.jpg"
     },
     {
-      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\4.jpg",
-      "PackagePath": "staticwebassets\\img\\products\\4.jpg"
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\123123123444.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\123123123444.jpg"
     },
     {
-      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\5.jpg",
-      "PackagePath": "staticwebassets\\img\\products\\5.jpg"
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\210916114252-iphone-13-04.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\210916114252-iphone-13-04.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\210917052004-ipad-06.png",
+      "PackagePath": "staticwebassets\\img\\products\\210917052004-ipad-06.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\211210011302-mhje3za-a.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\211210011302-mhje3za-a.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\211210011302-mhje3za-a1.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\211210011302-mhje3za-a1.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\211210011302-mhje3za-a2.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\211210011302-mhje3za-a2.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\211214033610-mhxh3vn-a.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\211214033610-mhxh3vn-a.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\211214033610-mhxh3vn-a1.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\211214033610-mhxh3vn-a1.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\220221024908-mhje3za-a.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\220221024908-mhje3za-a.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\220221024910-mhje3za-a.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\220221024910-mhje3za-a.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\220221024912-mhje3za-a.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\220221024912-mhje3za-a.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\220221042716-mhxh3vn-a.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\220221042716-mhxh3vn-a.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\220221043953-ic33pdwhi.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\220221043953-ic33pdwhi.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\220414122259-hj205eu.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\220414122259-hj205eu.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\220414122323-hj205eu.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\220414122323-hj205eu.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\220510023558-iphone-13-green-select-220309102417-220309102417-thumb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\220510023558-iphone-13-green-select-220309102417-220309102417-thumb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\220918085116-mhxh3vn-a.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\220918085116-mhxh3vn-a.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\221001015448-hj205eu.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\221001015448-hj205eu.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\230913015232-op-lung-magsafe-iphone-15-pro-apple-silicone-chinh-hang-1.png",
+      "PackagePath": "staticwebassets\\img\\products\\230913015232-op-lung-magsafe-iphone-15-pro-apple-silicone-chinh-hang-1.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\230913022642-mt1g3fe-a.png",
+      "PackagePath": "staticwebassets\\img\\products\\230913022642-mt1g3fe-a.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\230913022642-mt1g3fe-a1.png",
+      "PackagePath": "staticwebassets\\img\\products\\230913022642-mt1g3fe-a1.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\230913022642-mt1g3fe-a2.png",
+      "PackagePath": "staticwebassets\\img\\products\\230913022642-mt1g3fe-a2.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\230913022642-mt1g3fe-a4.png",
+      "PackagePath": "staticwebassets\\img\\products\\230913022642-mt1g3fe-a4.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\230913022642-mt1g3fe-a5.png",
+      "PackagePath": "staticwebassets\\img\\products\\230913022642-mt1g3fe-a5.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\230913041631-iphone-15-green.png",
+      "PackagePath": "staticwebassets\\img\\products\\230913041631-iphone-15-green.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231206035739-670nc.png",
+      "PackagePath": "staticwebassets\\img\\products\\231206035739-670nc.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231206035739-670nc1.png",
+      "PackagePath": "staticwebassets\\img\\products\\231206035739-670nc1.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231206035739-670nc2.png",
+      "PackagePath": "staticwebassets\\img\\products\\231206035739-670nc2.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231206035739-670nc3.png",
+      "PackagePath": "staticwebassets\\img\\products\\231206035739-670nc3.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231206035740-670nc.png",
+      "PackagePath": "staticwebassets\\img\\products\\231206035740-670nc.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209051811-iphone-15-pro-max-512gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209051811-iphone-15-pro-max-512gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209051813-iphone-15-pro-max-512gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209051813-iphone-15-pro-max-512gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209051814-iphone-15-pro-max-512gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209051814-iphone-15-pro-max-512gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209053729-iphone-15-256gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209053729-iphone-15-256gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209053729-iphone-15-256gb1.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209053729-iphone-15-256gb1.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209053731-iphone-15-256gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209053731-iphone-15-256gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209053732-iphone-15-256gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209053732-iphone-15-256gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209053733-iphone-15-256gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209053733-iphone-15-256gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209053735-iphone-15-256gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209053735-iphone-15-256gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209053735-iphone-15-256gb1.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209053735-iphone-15-256gb1.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209053737-iphone-15-256gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209053737-iphone-15-256gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209053738-iphone-15-256gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209053738-iphone-15-256gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209053740-iphone-15-256gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209053740-iphone-15-256gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209053742-iphone-15-256gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209053742-iphone-15-256gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209053743-iphone-15-256gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209053743-iphone-15-256gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209053743-iphone-15-256gb1.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209053743-iphone-15-256gb1.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209053745-iphone-15-256gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209053745-iphone-15-256gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209053746-iphone-15-256gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209053746-iphone-15-256gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209053747-iphone-15-256gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209053747-iphone-15-256gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231209053748-iphone-15-256gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231209053748-iphone-15-256gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231214100237-jblt670ncblk.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231214100237-jblt670ncblk.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231214100237-jblt670ncblk1.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231214100237-jblt670ncblk1.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\231214100238-jblt670ncblk.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\231214100238-jblt670ncblk.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\234234.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\234234.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\23423423423.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\23423423423.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\234234234234.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\234234234234.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\234234234234234.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\234234234234234.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\234234234234234234234.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\234234234234234234234.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\23434.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\23434.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240527023843-iphone-13-128gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240527023843-iphone-13-128gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240527023848-iphone-13-128gb1.webp",
+      "PackagePath": "staticwebassets\\img\\products\\240527023848-iphone-13-128gb1.webp"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240527023848-iphone-13-128gb3.webp",
+      "PackagePath": "staticwebassets\\img\\products\\240527023848-iphone-13-128gb3.webp"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240527023848-iphone-13-128gb4.webp",
+      "PackagePath": "staticwebassets\\img\\products\\240527023848-iphone-13-128gb4.webp"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240527024030-iphone-13-256gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240527024030-iphone-13-256gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240527024037-iphone-13-256gb.webp",
+      "PackagePath": "staticwebassets\\img\\products\\240527024037-iphone-13-256gb.webp"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240527024037-iphone-13-256gb1.webp",
+      "PackagePath": "staticwebassets\\img\\products\\240527024037-iphone-13-256gb1.webp"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240527024037-iphone-13-256gb2.webp",
+      "PackagePath": "staticwebassets\\img\\products\\240527024037-iphone-13-256gb2.webp"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240527024037-iphone-13-256gb3.webp",
+      "PackagePath": "staticwebassets\\img\\products\\240527024037-iphone-13-256gb3.webp"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240527024037-iphone-13-256gb4.webp",
+      "PackagePath": "staticwebassets\\img\\products\\240527024037-iphone-13-256gb4.webp"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240528022430-220309063614-ipad-air-select-wifi-starlight-202203-220309063614-thumb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240528022430-220309063614-ipad-air-select-wifi-starlight-202203-220309063614-thumb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240528043311-ipad-10-2-64-gb-wifi-chinh-hang-vn-a.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240528043311-ipad-10-2-64-gb-wifi-chinh-hang-vn-a.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240528043311-ipad-10-2-64-gb-wifi-chinh-hang-vn-a1.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240528043311-ipad-10-2-64-gb-wifi-chinh-hang-vn-a1.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240528043311-ipad-10-2-64-gb-wifi-chinh-hang-vn-a2.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240528043311-ipad-10-2-64-gb-wifi-chinh-hang-vn-a2.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240528043311-ipad-10-2-64-gb-wifi-chinh-hang-vn-a4.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240528043311-ipad-10-2-64-gb-wifi-chinh-hang-vn-a4.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240528103455-ipad-air-5-64gb-wifi.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240528103455-ipad-air-5-64gb-wifi.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240528103455-ipad-air-5-64gb-wifi1.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240528103455-ipad-air-5-64gb-wifi1.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240528103455-ipad-air-5-64gb-wifi2.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240528103455-ipad-air-5-64gb-wifi2.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240528103456-ipad-air-5-64gb-wifi1.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240528103456-ipad-air-5-64gb-wifi1.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240529094657-ipad-mini-6-black-1-650x650.webp",
+      "PackagePath": "staticwebassets\\img\\products\\240529094657-ipad-mini-6-black-1-650x650.webp"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240529094808-ipad-mini-6-64-gb-wifi-chinh-hang-vn-a5.webp",
+      "PackagePath": "staticwebassets\\img\\products\\240529094808-ipad-mini-6-64-gb-wifi-chinh-hang-vn-a5.webp"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240529095405-ipad-mini-6-64g-wifi-5g1.webp",
+      "PackagePath": "staticwebassets\\img\\products\\240529095405-ipad-mini-6-64g-wifi-5g1.webp"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240529095442-ipad-mini-6-pink-1-2-650x650.webp",
+      "PackagePath": "staticwebassets\\img\\products\\240529095442-ipad-mini-6-pink-1-2-650x650.webp"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240607090534-10068321.png",
+      "PackagePath": "staticwebassets\\img\\products\\240607090534-10068321.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240607090534-10068322.png",
+      "PackagePath": "staticwebassets\\img\\products\\240607090534-10068322.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240607090534-10068323.png",
+      "PackagePath": "staticwebassets\\img\\products\\240607090534-10068323.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240607090534-10068324.png",
+      "PackagePath": "staticwebassets\\img\\products\\240607090534-10068324.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240607090535-10068322.png",
+      "PackagePath": "staticwebassets\\img\\products\\240607090535-10068322.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240910032228-iphone-16-pro-max-desert-titanium-pdp-image-position-1a-desert-titanium-color-vn-vi.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240910032228-iphone-16-pro-max-desert-titanium-pdp-image-position-1a-desert-titanium-color-vn-vi.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240910035616-op-lung-magsafe-iphone-16-apple-silicone-chinh-hang-7.png",
+      "PackagePath": "staticwebassets\\img\\products\\240910035616-op-lung-magsafe-iphone-16-apple-silicone-chinh-hang-7.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240910040629-myy53fe-a.png",
+      "PackagePath": "staticwebassets\\img\\products\\240910040629-myy53fe-a.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240910040629-myy53fe-a3.png",
+      "PackagePath": "staticwebassets\\img\\products\\240910040629-myy53fe-a3.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240910040629-myy53fe-a6.png",
+      "PackagePath": "staticwebassets\\img\\products\\240910040629-myy53fe-a6.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240910040629-myy53fe-a9.png",
+      "PackagePath": "staticwebassets\\img\\products\\240910040629-myy53fe-a9.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240910082946-iphone16-pro-max-1tb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240910082946-iphone16-pro-max-1tb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240910082946-iphone16-pro-max-1tb1.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240910082946-iphone16-pro-max-1tb1.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240910082946-iphone16-pro-max-1tb2.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240910082946-iphone16-pro-max-1tb2.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240910082946-iphone16-pro-max-1tb4.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240910082946-iphone16-pro-max-1tb4.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240910082946-iphone16-pro-max-1tb5.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240910082946-iphone16-pro-max-1tb5.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240910082946-iphone16-pro-max-1tb6.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240910082946-iphone16-pro-max-1tb6.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240910113704-iphone-16-256gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240910113704-iphone-16-256gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240910113705-iphone-16-256gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240910113705-iphone-16-256gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240910113705-iphone-16-256gb1.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240910113705-iphone-16-256gb1.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240910113737-iphone-16-ultramarine-pdp-image-position-1a-ultramarine-color-vn-vi.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240910113737-iphone-16-ultramarine-pdp-image-position-1a-ultramarine-color-vn-vi.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240910114303-iphone-16-ultramarine-pdp-image-position-1a-ultramarine-color-vn-vi.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\240910114303-iphone-16-ultramarine-pdp-image-position-1a-ultramarine-color-vn-vi.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240911095924-ma6a4fe-a.png",
+      "PackagePath": "staticwebassets\\img\\products\\240911095924-ma6a4fe-a.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240911095924-ma6a4fe-a1.png",
+      "PackagePath": "staticwebassets\\img\\products\\240911095924-ma6a4fe-a1.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240911095924-ma6a4fe-a2.png",
+      "PackagePath": "staticwebassets\\img\\products\\240911095924-ma6a4fe-a2.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240911095924-ma6a4fe-a3.png",
+      "PackagePath": "staticwebassets\\img\\products\\240911095924-ma6a4fe-a3.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\240911095924-ma6a4fe-a4.png",
+      "PackagePath": "staticwebassets\\img\\products\\240911095924-ma6a4fe-a4.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\241002101239-iphone-16-128gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\241002101239-iphone-16-128gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\241002101241-iphone-16-128gb.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\241002101241-iphone-16-128gb.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\466468144_1747496399343860_535051513138329375_n.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\466468144_1747496399343860_535051513138329375_n.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\466737395_1747496376010529_3070997572903465609_n.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\466737395_1747496376010529_3070997572903465609_n.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\466790322_1747744192652414_8627237491438387207_n.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\466790322_1747744192652414_8627237491438387207_n.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\466901382_1747496366010530_5815148351375102518_n.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\466901382_1747496366010530_5815148351375102518_n.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\467170362_1749024362524397_782957144041914114_n.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\467170362_1749024362524397_782957144041914114_n.jpg"
     },
     {
       "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\6.png",
@@ -79,6 +531,14 @@
     {
       "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\7.png",
       "PackagePath": "staticwebassets\\img\\products\\7.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\9909090909.jpeg",
+      "PackagePath": "staticwebassets\\img\\products\\9909090909.jpeg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Genuine-Apple-iPhone-X-64GB-256GB-ROM-5-8-Original-OLED-Face-ID-A11-Hexa-Core.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\Genuine-Apple-iPhone-X-64GB-256GB-ROM-5-8-Original-OLED-Face-ID-A11-Hexa-Core.jpg"
     },
     {
       "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip12-1.png",
@@ -109,18 +569,6 @@
       "PackagePath": "staticwebassets\\img\\products\\Ip12-7.png"
     },
     {
-      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip13-1.jpg",
-      "PackagePath": "staticwebassets\\img\\products\\Ip13-1.jpg"
-    },
-    {
-      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip13-2.jpg",
-      "PackagePath": "staticwebassets\\img\\products\\Ip13-2.jpg"
-    },
-    {
-      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip13-3.jpg",
-      "PackagePath": "staticwebassets\\img\\products\\Ip13-3.jpg"
-    },
-    {
       "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip13-4.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Ip13-4.jpg"
     },
@@ -145,24 +593,24 @@
       "PackagePath": "staticwebassets\\img\\products\\Ip14-4.jpg"
     },
     {
-      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip14-5.jpg",
-      "PackagePath": "staticwebassets\\img\\products\\Ip14-5.jpg"
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip15-1.png",
+      "PackagePath": "staticwebassets\\img\\products\\Ip15-1.png"
     },
     {
-      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Iphonex1.jpg",
-      "PackagePath": "staticwebassets\\img\\products\\Iphonex1.jpg"
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip15-2.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\Ip15-2.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip15-3.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\Ip15-3.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Ip15-4.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\Ip15-4.jpg"
     },
     {
       "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Iphonex2.jpg",
       "PackagePath": "staticwebassets\\img\\products\\Iphonex2.jpg"
-    },
-    {
-      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Iphonex3.jpg",
-      "PackagePath": "staticwebassets\\img\\products\\Iphonex3.jpg"
-    },
-    {
-      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Iphonex4.jpg",
-      "PackagePath": "staticwebassets\\img\\products\\Iphonex4.jpg"
     },
     {
       "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\Iphonex5.jpg",
@@ -189,6 +637,102 @@
       "PackagePath": "staticwebassets\\img\\products\\anh5.jpg"
     },
     {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\coc-sac-2-cong-hyperjuice-20w-hj205eu-chau-tron-230131050700.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\coc-sac-2-cong-hyperjuice-20w-hj205eu-chau-tron-230131050700.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\coc-sac-2-cong-hyperjuice-20w-hj205eu-chau-tron-240314110331.png",
+      "PackagePath": "staticwebassets\\img\\products\\coc-sac-2-cong-hyperjuice-20w-hj205eu-chau-tron-240314110331.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\coc-sac-nhanh-apple-20w-type-c-chinh-hang-mhje3za--240222084205.png",
+      "PackagePath": "staticwebassets\\img\\products\\coc-sac-nhanh-apple-20w-type-c-chinh-hang-mhje3za--240222084205.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\coc-sac-nhanh-apple-20w-type-c-mhje3za-chinh-hang-220802040547.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\coc-sac-nhanh-apple-20w-type-c-mhje3za-chinh-hang-220802040547.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\coc-sac-nhanh-innostyle-33w-minicube-gan-ii-10-220814032355.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\coc-sac-nhanh-innostyle-33w-minicube-gan-ii-10-220814032355.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\cuong-luc-jcpal-ipad-air-11-inch-2024-240626023708.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\cuong-luc-jcpal-ipad-air-11-inch-2024-240626023708.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\dfasdfasdf.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\dfasdfasdf.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\dfasdfsa.webp",
+      "PackagePath": "staticwebassets\\img\\products\\dfasdfsa.webp"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\dsfasdf.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\dsfasdf.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\dskjfhslj.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\dskjfhslj.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\e-sac-khong-day-apple-magsafe-15w-chinh-hang-mhxh3-240222084001.png",
+      "PackagePath": "staticwebassets\\img\\products\\e-sac-khong-day-apple-magsafe-15w-chinh-hang-mhxh3-240222084001.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\fasdfsad.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\fasdfsad.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\fgsdfgsdfg.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\fgsdfgsdfg.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\haxor.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\haxor.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\images.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\images.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\ipad-mini-6-256-gb-chinh-hang-vn-aminhtuanmobile-com3-copy-2.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\ipad-mini-6-256-gb-chinh-hang-vn-aminhtuanmobile-com3-copy-2.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\ipad-mini-6-256-gb-chinh-hang-vn-aminhtuanmobile-com6(1).jpeg",
+      "PackagePath": "staticwebassets\\img\\products\\ipad-mini-6-256-gb-chinh-hang-vn-aminhtuanmobile-com6(1).jpeg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\ipad-mini-6-256-gb-chinh-hang-vn-aminhtuanmobile-com7.jpeg",
+      "PackagePath": "staticwebassets\\img\\products\\ipad-mini-6-256-gb-chinh-hang-vn-aminhtuanmobile-com7.jpeg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\ipad-mini-6-64-gb-chinh-hang-vn-aminhtuanmobile-com.jpeg",
+      "PackagePath": "staticwebassets\\img\\products\\ipad-mini-6-64-gb-chinh-hang-vn-aminhtuanmobile-com.jpeg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\ipad-mini-6-64-gb-chinh-hang-vn-aminhtuanmobile-com3.jpeg",
+      "PackagePath": "staticwebassets\\img\\products\\ipad-mini-6-64-gb-chinh-hang-vn-aminhtuanmobile-com3.jpeg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\ipad-mini-6-64-gb-chinh-hang-vn-aminhtuanmobile-com4.jpeg",
+      "PackagePath": "staticwebassets\\img\\products\\ipad-mini-6-64-gb-chinh-hang-vn-aminhtuanmobile-com4.jpeg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\ipad-mini-6-64-gb-chinh-hang-vn-aminhtuanmobile-com7.jpeg",
+      "PackagePath": "staticwebassets\\img\\products\\ipad-mini-6-64-gb-chinh-hang-vn-aminhtuanmobile-com7.jpeg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\ipad-mini-6-64-gb-chinh-hang-vn-aminhtuanmobile-com8.jpeg",
+      "PackagePath": "staticwebassets\\img\\products\\ipad-mini-6-64-gb-chinh-hang-vn-aminhtuanmobile-com8.jpeg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\ipad-mini-6-64-gb-chinh-hang-vn-aminhtuanmobile-com9.jpeg",
+      "PackagePath": "staticwebassets\\img\\products\\ipad-mini-6-64-gb-chinh-hang-vn-aminhtuanmobile-com9.jpeg"
+    },
+    {
       "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\iphone-13-02.jpg",
       "PackagePath": "staticwebassets\\img\\products\\iphone-13-02.jpg"
     },
@@ -209,12 +753,120 @@
       "PackagePath": "staticwebassets\\img\\products\\iphone-13-128gb.jpg"
     },
     {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\iphonex_front_back_glass_big.jpg.large.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\iphonex_front_back_glass_big.jpg.large.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\jdsflkjasdlkj.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\jdsflkjasdlkj.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\op-lung-magsafe-iphone-15-pro-apple-silicone-chinh-230917094258.png",
+      "PackagePath": "staticwebassets\\img\\products\\op-lung-magsafe-iphone-15-pro-apple-silicone-chinh-230917094258.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\op-lung-magsafe-iphone-16-apple-clear-chinh-hang-240911095746.png",
+      "PackagePath": "staticwebassets\\img\\products\\op-lung-magsafe-iphone-16-apple-clear-chinh-hang-240911095746.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\op-lung-magsafe-iphone-16-apple-silicone-chinh-han-241012054056.png",
+      "PackagePath": "staticwebassets\\img\\products\\op-lung-magsafe-iphone-16-apple-silicone-chinh-han-241012054056.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\pin-sac-du-phong-apple-magsafe-battery-pack-chinh--240314103223.png",
+      "PackagePath": "staticwebassets\\img\\products\\pin-sac-du-phong-apple-magsafe-battery-pack-chinh--240314103223.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\pin-sac-du-phong-apple-magsafe-battery-pack-chinh-hang-mjwy3vn-1-220803123745.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\pin-sac-du-phong-apple-magsafe-battery-pack-chinh-hang-mjwy3vn-1-220803123745.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\sac-khong-day-apple-magsafe-15w-chinh-hang-mhxh3vn-220918084909.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\sac-khong-day-apple-magsafe-15w-chinh-hang-mhxh3vn-220918084909.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\sac-khong-day-apple-magsafe-25w-chinh-hang-mx6x3vn-5-240910053902.png",
+      "PackagePath": "staticwebassets\\img\\products\\sac-khong-day-apple-magsafe-25w-chinh-hang-mx6x3vn-5-240910053902.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\sdfsd.png",
+      "PackagePath": "staticwebassets\\img\\products\\sdfsd.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\sdfsdfs.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\sdfsdfs.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\tai-nghe-chup-tai-jbl-tune-670nc-231206035623.png",
+      "PackagePath": "staticwebassets\\img\\products\\tai-nghe-chup-tai-jbl-tune-670nc-231206035623.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\tai-nghe-chup-tai-jbl-tune-670nc-240503015611.png",
+      "PackagePath": "staticwebassets\\img\\products\\tai-nghe-chup-tai-jbl-tune-670nc-240503015611.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\tai-nghe-chup-tai-marshall-major-v-240607085820.png",
+      "PackagePath": "staticwebassets\\img\\products\\tai-nghe-chup-tai-marshall-major-v-240607085820.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\xanh-2-500x500.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\xanh-2-500x500.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\z5955253992046_5311e4a90c6287ae4eef66ede1df78ed.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\z5955253992046_5311e4a90c6287ae4eef66ede1df78ed.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\z5955253998935_a74ac41bd1b2c2ed15376944387d2569.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\z5955253998935_a74ac41bd1b2c2ed15376944387d2569.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\z5955257956016_def34cc0cc25ef129c620cf5d1b4cd54.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\z5955257956016_def34cc0cc25ef129c620cf5d1b4cd54.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\z5955257970685_8fd7e19aaf0410b812a9fecc32c0c944.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\z5955257970685_8fd7e19aaf0410b812a9fecc32c0c944.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\z5976370663726_2c2a55b39ea16d6523fcb3e2729e3a83.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\z5976370663726_2c2a55b39ea16d6523fcb3e2729e3a83.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\z5976396549911_35b2008cc01f6cb145aa92e85cb1577b.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\z5976396549911_35b2008cc01f6cb145aa92e85cb1577b.jpg"
+    },
+    {
       "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\z6011905086763_066468b44d4d46a3a72e29546ab8988c.jpg",
       "PackagePath": "staticwebassets\\img\\products\\z6011905086763_066468b44d4d46a3a72e29546ab8988c.jpg"
     },
     {
       "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\z6011905769343_29c24acf6793de96ea5fa59c286eff80.jpg",
       "PackagePath": "staticwebassets\\img\\products\\z6011905769343_29c24acf6793de96ea5fa59c286eff80.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\z6011907278269_8acf338f09be3a7f7868613e8124ac18.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\z6011907278269_8acf338f09be3a7f7868613e8124ac18.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\z6011907282111_ad776754f826996bfc4ddbb34aadee08.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\z6011907282111_ad776754f826996bfc4ddbb34aadee08.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\z6011907282819_434fe6db6036f817efe32582d17d4f9d.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\z6011907282819_434fe6db6036f817efe32582d17d4f9d.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\z6011907285445_fb339d3e9a15a35d8a77f35ad75f1544.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\z6011907285445_fb339d3e9a15a35d8a77f35ad75f1544.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\z6011907292537_962d175ff88e986506734f20a2274df4.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\z6011907292537_962d175ff88e986506734f20a2274df4.jpg"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\products\\z6011907294226_04a7cc7b4532f889dd4e77bd1726b602.jpg",
+      "PackagePath": "staticwebassets\\img\\products\\z6011907294226_04a7cc7b4532f889dd4e77bd1726b602.jpg"
     },
     {
       "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\social\\apple.png",
@@ -275,6 +927,30 @@
     {
       "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\social\\zalo.png",
       "PackagePath": "staticwebassets\\img\\social\\zalo.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\test\\hacking.png",
+      "PackagePath": "staticwebassets\\img\\test\\hacking.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\test\\huhu.png",
+      "PackagePath": "staticwebassets\\img\\test\\huhu.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\test\\icloud.png",
+      "PackagePath": "staticwebassets\\img\\test\\icloud.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\test\\security.png",
+      "PackagePath": "staticwebassets\\img\\test\\security.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\test\\uchi.png",
+      "PackagePath": "staticwebassets\\img\\test\\uchi.png"
+    },
+    {
+      "Id": "D:\\Backup\\PhoneShop\\wwwroot\\img\\test\\widgets.png",
+      "PackagePath": "staticwebassets\\img\\test\\widgets.png"
     },
     {
       "Id": "D:\\Backup\\PhoneShop\\wwwroot\\js\\site.js",

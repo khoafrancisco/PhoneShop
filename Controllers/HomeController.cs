@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using PhoneShop.Models;
@@ -10,6 +11,8 @@ namespace PhoneShop.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly AppDbContext context;
+
+        public AuthenticationProperties? CustomerCookie { get; private set; }
 
         public HomeController(ILogger<HomeController> logger, AppDbContext context)
         {
@@ -42,9 +45,15 @@ namespace PhoneShop.Controllers
             return View();  
         }
         
-        public IActionResult About()
+        public IActionResult News()
         {
             return View();
+        }
+        public IActionResult Logout()
+        {
+            // Handle logout (e.g., clear session)
+            // object value = await HttpContext.SignOutAsync(CustomerCookie);
+            return RedirectToAction("Index", "Home");
         }
     }
 }

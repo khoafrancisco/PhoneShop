@@ -10,7 +10,8 @@ using System.Threading.Tasks;
 namespace PhoneShop.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "Admin")]
+    // [Authorize(Roles = "Admin")]
+[Authorize(AuthenticationSchemes = "AdminCookie", Roles = "Admin")]
     public class OrderController : Controller
     {
         private readonly AppDbContext _appDbContext;

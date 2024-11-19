@@ -1,0 +1,153 @@
+@model OrderViewModel
+
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h4 class="fw-bold mb-0">Thông tin nhận hàng</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="VNPayPayment" method="post">
+                <!-- Thông tin đơn hàng -->
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="FullName" class="form-label">Họ và tên <span class="text-danger">(bắt
+                                buộc)</span></label>
+                        <input type="text" class="form-control" id="FullName" name="FullName" required>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="Phone" class="form-label">Số điện thoại <span class="text-danger">(bắt
+                                buộc)</span></label>
+                        <input type="tel" class="form-control" id="Phone" name="Phone" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <label for="Email" class="form-label">Địa chỉ email</label>
+                        <input type="email" class="form-control" id="Email" name="Email">
+                    </div>
+                </div>
+
+                <!-- Phương thức nhận hàng -->
+                <div class="mb-4">
+                    <label class="form-label fw-bold">Chọn phương thức nhận hàng:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="PickUp" name="DeliveryMethod" value="PickUp"
+                            checked>
+                        <label class="form-check-label" for="PickUp">Nhận tại cửa hàng</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="Delivery" name="DeliveryMethod"
+                            value="Delivery">
+                        <label class="form-check-label" for="Delivery">Giao hàng tận nơi</label>
+                    </div>
+                </div>
+
+                <!-- Hệ thống cửa hàng (nếu chọn Nhận tại cửa hàng) -->
+                <div class="mb-3" id="StoreLocation" style="display: block;">
+                    <label for="Store" class="form-label">Hệ thống cửa hàng</label>
+                    <select class="form-select" id="Store" name="Store">
+                        <option value="HCM">82 ngõ Thịnh Quang - Quận Đống Đa - Hà Nội</option>
+                    </select>
+                </div>
+
+                <!-- Địa chỉ giao hàng (nếu chọn Giao hàng tận nơi) -->
+                <div id="ShippingAddressBox" style="display: none;">
+                    <label class="form-label fw-bold">Địa chỉ giao hàng</label>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="Province" class="form-label">Tỉnh/Thành phố</label>
+                            <input type="text" class="form-control" id="Province" name="Province"
+                                placeholder="Nhập tỉnh hoặc thành phố">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="District" class="form-label">Quận/Huyện</label>
+                            <input type="text" class="form-control" id="District" name="District"
+                                placeholder="Nhập quận hoặc huyện">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="Ward" class="form-label">Phường/Xã</label>
+                            <input type="text" class="form-control" id="Ward" name="Ward"
+                                placeholder="Nhập phường hoặc xã">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="DetailedAddress" class="form-label">Địa chỉ cụ thể</label>
+                            <input type="text" class="form-control" id="DetailedAddress" name="DetailedAddress"
+                                placeholder="Nhập địa chỉ cụ thể (số nhà, đường...)">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ghi chú của khách hàng -->
+                <div class="mb-4">
+                    <label for="Note" class="form-label">Ghi chú của khách hàng</label>
+                    <textarea class="form-control" id="Note" name="Note" rows="3"></textarea>
+                </div>
+
+                <!-- Nút Gửi -->
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary w-50">Xác nhận đặt hàng</button>
+                </div>
+            </form>
+
+            <form asp-controller="Checkout" asp-action="CreatePaymentUrlVnpay" method="post">
+                <input type="hidden" name="Name" value="Minh Shop Apple">
+                <input type="hidden" name="Amount" value="@Model.TotalAmount">
+                <input type="hidden" name="OrderDescription" value="Thanh toan iphone">
+                <input type="hidden" name="OrderType" value="other">
+                <button class="btn btn-danger" type="submit">Thanh toan ngay</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Phần hình thức thanh toán (ẩn ban đầu) -->
+    <div class="card shadow-sm mt-4" id="paymentOptions" style="display: none;">
+        <div class="card-header bg-success text-white">
+            <h4 class="fw-bold mb-0">Hình thức thanh toán</h4>
+        </div>
+        <div class="card-body">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="PaymentMethod" id="PaymentMethod1"
+                    value="CreditCard">
+                <label class="form-check-label" for="PaymentMethod1">Thẻ tín dụng</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="PaymentMethod" id="PaymentMethod2"
+                    value="CashOnDelivery">
+                <label class="form-check-label" for="PaymentMethod2">Thanh toán khi nhận hàng</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="PaymentMethod" id="PaymentMethod3" value="MoMo">
+                <label class="form-check-label" for="PaymentMethod3">Ví MoMo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="PaymentMethod" id="PaymentMethod4" value="ZaloPay">
+                <label class="form-check-label" for="PaymentMethod4">Ví ZaloPay</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // JavaScript để ẩn/hiện hệ thống cửa hàng hoặc địa chỉ giao hàng khi chọn phương thức nhận hàng
+    document.querySelectorAll('input[name="DeliveryMethod"]').forEach((elem) => {
+        elem.addEventListener("change", function () {
+            if (this.value === "PickUp") {
+                document.getElementById("StoreLocation").style.display = "block";
+                document.getElementById("ShippingAddressBox").style.display = "none";
+            } else {
+                document.getElementById("StoreLocation").style.display = "none";
+                document.getElementById("ShippingAddressBox").style.display = "block";
+            }
+        });
+    });
+
+    // JavaScript để hiển thị phần "Hình thức thanh toán" khi nhấn nút xác nhận đặt hàng
+    function showPaymentOptions(event) {
+        event.preventDefault(); // Ngăn chặn hành động submit form mặc định
+        document.getElementById("paymentOptions").style.display = "block"; // Hiển thị phần thanh toán
+    }
+</script>

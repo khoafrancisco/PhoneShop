@@ -23,6 +23,7 @@ public class AppDbContext : DbContext
     public DbSet<Shipping> Shippings { get; set; }
     public DbSet<Users> Users { get; set; }
     public DbSet<Media> Medias { get; set; }
+    public object ZaloPayRequests { get; internal set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

@@ -1,0 +1,20 @@
+@{
+    ViewBag.Title = "VNPayPayment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model PhoneShop.Models.Payment.PaymentResponseModel
+
+@if (Model.Success)
+{
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Payment was successful!</h4>
+        <p>Thank you for your purchase!</p>
+    </div>
+}
+else
+{
+    <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">Payment was unsuccessful!</h4>
+        <p>Please try again later!</p>
+    </div>
+}

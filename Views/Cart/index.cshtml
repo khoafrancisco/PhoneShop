@@ -94,7 +94,7 @@
         <!-- Continue Shopping and Checkout Buttons -->
         <div class="d-flex justify-content-between mt-4">
             <a href="@Url.Action("Index", "Products")" class="btn btn-secondary">Tiếp tục mua sắm</a>
-            <a href="@Url.Action("Checkout", "Cart")" class="btn btn-primary">Thanh toán</a>
+            <a href="@Url.Action("Index", "Checkout", new OrderViewModel { TotalAmount = Convert.ToInt32(Model.TotalPrice) })" class="btn btn-primary">Đặt hàng</a>
         </div>
     }
 </div>
